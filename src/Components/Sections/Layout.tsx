@@ -16,7 +16,7 @@ function Layout() {
           
         
 
-        <main style={{ padding: '20px' }}>
+        <main >
           <Outlet />
 
         </main>

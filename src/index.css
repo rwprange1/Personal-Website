@@ -1,9 +1,10 @@
 @import "tailwindcss";
-@tailwind utilities;
+
 
 html, body{
-
   font-family: "Space Grotesk", sans-serif;
   background-color: black;
+  overflow-y: scroll;
+  min-width: 200px;
 }
 
