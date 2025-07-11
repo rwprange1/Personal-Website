@@ -15,14 +15,19 @@ export default function Header(props: headerProps) {
     <nav>
       {/** Large to medium size screens */}
     <div className="hidden md:flex flex-row items-center justify-between pb-0.5">
+       
+      <a className="rounded-full bg-zinc-50 text-white hover:outline-1 hover:outline-purple-400" href="/">
+        <img className="w-10 h-10 rounded-full" src="" alt="avatar"/> 
+      </a>
+              
 
   {/* Center header */}
   <div className="flex-grow flex justify-center py-2">
     <header className="flex min-w-xs justify-center bg-zinc-700 rounded-full outline-purple-400 outline-1 lg:w-1/2 w-4/10  xl:text-lg">
-      <button className="p-3 cursor-pointer text-white hover:text-purple-400">About</button>
-      <button className="p-3 cursor-pointer text-white hover:text-purple-400">Research</button>
-      <button className="p-3 cursor-pointer text-white hover:text-purple-400">Projects</button>
-      <button className="p-3 cursor-pointer text-white hover:text-purple-400">Contact</button>
+      <a href="/about" className="p-3 cursor-pointer text-white hover:text-purple-400">About</a>
+      <a className="p-3 cursor-pointer text-white hover:text-purple-400">Research</a>
+      <a className="p-3 cursor-pointer text-white hover:text-purple-400">Projects</a>
+      <a className="p-3 cursor-pointer text-white hover:text-purple-400">Contact</a>
     </header>
   </div>
 
@@ -49,6 +54,12 @@ export default function Header(props: headerProps) {
             className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-zinc-700 "
           >
             <div className="py-1">
+              <MenuItem>
+                <button className="rounded-full bg-zinc-50 text-white hover:outline-1 hover:outline-purple-400">
+                  <img className="w-10 h-10 rounded-full" src="" alt="avatar"/> 
+                </button>
+              </MenuItem>
+
               <MenuItem>
                 <a
                   href="#"

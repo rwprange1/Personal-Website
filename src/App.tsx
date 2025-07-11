@@ -17,6 +17,7 @@ function App() {
       <Router>
           <Routes>
               <Route path="/" element={<Layout  />}>
+                    
                     <Route index element={<Home />} />
                     <Route path="games" element={<Games/>}/>
                     <Route path="games/:gameId" element={<GameDetail />} />

@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 
-import ListEntry from "../../ListEntry/ListEntry";
+import ListEntry from "./ListEntry";
 
 
 

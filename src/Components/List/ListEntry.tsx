@@ -15,7 +15,7 @@ function ListEntry( props: jsonObject){
 
     return(
 
-        <div className="bg-inherit rounded-2xl hover:bg-zinc-800 p-5 flex-col w-2/3 self-center">
+        <div className="bg-inherit rounded-2xl hover:bg-zinc-900  hover:outline-1 hover:outline-purple-400  p-5 flex-col w-2/3 self-center">
 
             <div className="text-purple-400 text-2xl flex"> 
                 <PiLineVertical/>
