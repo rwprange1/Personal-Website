@@ -15,7 +15,7 @@ export default function Header(props: headerProps) {
   return (
     <nav>
       {/** Large to medium size screens */}
-    <div className="hidden md:flex flex-row items-center justify-between pb-0.5">
+    <div className="hidden md:flex flex-row items-center justify-between pt-4 pb-4">
        
       <a className="rounded-full bg-zinc-50 text-white hover:outline-1 hover:outline-purple-400" href="/">
         <img className="w-10 h-10 rounded-full" src="" alt="avatar"/> 

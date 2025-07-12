@@ -6,7 +6,7 @@ import Work from "../Work/Work";
 function Home(){
   
   return (
-    <div >
+    <div className="h-auto">
       <h1 className="text-white text-xl sm:text-4xl mb-3">
         Mathematician, Computer Scientist, Mountain Lover
       </h1>
@@ -48,8 +48,21 @@ function Home(){
         </div>
       </div>
 
-      <List />
-      <Work />
+     <div className="flex flex-col lg:flex-row pt-16 pb-0 gap-8">
+        <div className="flex flex-col text-lg text-gray-400 break-words w-full lg:w-1/2">
+          <List />
+        </div>
+        <div className="flex flex-col text-lg text-gray-400 break-words w-full lg:w-1/2">
+          <Work />
+        </div>
+      </div>
+
+      <hr className=" -translate-x-1/51 mt-2 w-[104%] px-0 p-0 border-purple-400 bg-purple-400"/>
+
+           
+
+      
+      
     </div>
   )
 }
