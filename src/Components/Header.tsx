@@ -1,4 +1,4 @@
-
+import { useState } from "react";
 import { LuMoonStar } from "react-icons/lu";
 import { IoIosArrowDown } from "react-icons/io";
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
@@ -8,8 +8,9 @@ interface headerProps{
 }
 
 export default function Header(props: headerProps) {
+  
  
-  console.log(props.light);
+
 
   return (
     <nav>
@@ -24,10 +25,10 @@ export default function Header(props: headerProps) {
   {/* Center header */}
   <div className="flex-grow flex justify-center py-2">
     <header className="flex min-w-xs justify-center bg-zinc-700 rounded-full outline-purple-400 outline-1 lg:w-1/2 w-4/10  xl:text-lg">
-      <a href="/about" className="p-3 cursor-pointer text-white hover:text-purple-400">About</a>
-      <a className="p-3 cursor-pointer text-white hover:text-purple-400">Research</a>
-      <a className="p-3 cursor-pointer text-white hover:text-purple-400">Projects</a>
-      <a className="p-3 cursor-pointer text-white hover:text-purple-400">Contact</a>
+      <a href="/about" className="p-3 cursor-pointer text-white hover:text-purple-400" >About</a>
+      <a href="/research" className="p-3 cursor-pointer text-white hover:text-purple-400">Research</a>
+      <a href="/projects" className="p-3 cursor-pointer text-white hover:text-purple-400">Projects</a>
+      <a href="/contact" className="p-3 cursor-pointer text-white hover:text-purple-400">Contact</a>
     </header>
   </div>
 
