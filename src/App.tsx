@@ -5,6 +5,7 @@ import Home from './Components/Sections/Home.tsx';
 import About from "./Components/Sections/About.tsx";
 import GameDetail from "./Components/Games/GameDetail.tsx";
 import Research from './Components/Sections/Research.tsx';
+import Projects from './Components/Sections/Projects.tsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -24,6 +25,7 @@ function App() {
                     <Route path="games/:gameId" element={<GameDetail />} />
                     <Route path="about" element={<About/>}/>
                     <Route path="research" element={<Research/>}/>
+                    <Route path="projects" element={<Projects/>}/>
               </Route>
           </Routes>
       </Router>
