@@ -45,7 +45,7 @@ function About() {
                 </div>
 
 
-                <div className="flex flex-col space-y-4 pt-4  ">
+                <div className="flex flex-col space-y-4 pt-4">
                         
                         <a href="https://github.com/rwprange1" target='_blank' className='rounded-full flex space-x-3 text-xl hover:text-purple-400'>
                           <IoLogoGithub size="1.2em" />

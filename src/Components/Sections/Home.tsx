@@ -2,6 +2,7 @@ import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import List from "../List/List";
 import Work from "../Work/Work";
+import Skills from "../Skills";
 
 function Home(){
   
@@ -48,16 +49,20 @@ function Home(){
         </div>
       </div>
 
+      <Skills/>
+
+
      <div className="flex flex-col lg:flex-row pt-16 pb-0 gap-8">
         <div className="flex flex-col text-lg text-gray-400 break-words w-full lg:w-1/2">
           <List />
         </div>
         <div className="flex flex-col text-lg text-gray-400 break-words w-full lg:w-1/2">
-          <Work />
+          
+          <Work />          
         </div>
       </div>
 
-      <hr className=" -translate-x-1/51 mt-2 w-[104%] px-0 p-0 border-purple-400 bg-purple-400"/>
+      <hr className="-translate-x-1/51 mt-2 w-[104%] px-0 p-0 border-purple-400 bg-purple-400"/>
 
            
 

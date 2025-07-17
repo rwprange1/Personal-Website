@@ -19,14 +19,9 @@ function List(){
     
     const obj: jsonObject[] = [
     
+   
     {
-        "date": "",
-        "title": "Testing",
-        "desc": "What is this",
-        "link": "www.hi.com"
-    },
-    {
-        "date": "August 5th, 2025",
+        "date": "May 8, 2025",
         "title": "Generalised Fans vs. Triangles",
         "desc": "In this paper we evaluated the Ramsey number of a fan with 2, 3-vertex blades vs. triangles",
         "link": "https://combinatorialpress.com/um-articles/vol-123/ramsey-theory-for-a-generalized-fan-versus-triangles/"
