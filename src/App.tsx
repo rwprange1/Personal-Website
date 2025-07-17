@@ -5,7 +5,7 @@ import Home from './Components/Sections/Home.tsx';
 import About from "./Components/Sections/About.tsx";
 import GameDetail from "./Components/Games/GameDetail.tsx";
 import Research from './Components/Sections/Research.tsx';
-import Projects from './Components/Sections/Projects.tsx';
+import Projects from './Components/Projects/Projects.tsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 

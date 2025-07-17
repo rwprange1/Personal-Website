@@ -59,7 +59,8 @@ function Work(){
 
 
             </div>
-
+            <a href="" download="Richard-trans.pdf" className="p-2 w-full text-center rounded-2xl px-2 py-1 bg-zinc-700 hover:bg-zinc-600">Download Transcript &darr;</a>
+            
 
 
 
