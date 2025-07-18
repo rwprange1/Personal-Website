@@ -34,6 +34,8 @@ function About() {
                 <text className="p-5">
                     While completing my masters in Mathematics at UNC Charlotte I plan to continue to work on and improve my programming skills by adding projects to this website.
                 </text>
+
+                
                 
 
 

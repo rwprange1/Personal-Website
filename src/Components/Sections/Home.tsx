@@ -62,7 +62,7 @@ function Home(){
         </div>
       </div>
 
-      <hr className="-translate-x-1/51 mt-2 w-[104%] px-0 p-0 border-purple-400 bg-purple-400"/>
+      
 
            
 
