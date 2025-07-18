@@ -29,6 +29,7 @@ export default function Header(props: headerProps) {
       <a href="/research" className="p-3 cursor-pointer text-white hover:text-purple-400">Research</a>
       <a href="/projects" className="p-3 cursor-pointer text-white hover:text-purple-400">Projects</a>
       <a href="/contact" className="p-3 cursor-pointer text-white hover:text-purple-400">Contact</a>
+      <a href="/hours" className="p-3 cursor-pointer text-white hover:text-purple-400">Office Hours</a>
     </header>
   </div>
 
@@ -92,6 +93,15 @@ export default function Header(props: headerProps) {
                   className="rounded-md block px-4 py-1 text-sm text-white data-focus:bg-zinc-900"
                 >
                   Contact
+                </a>
+              </MenuItem>
+
+              <MenuItem>
+                <a
+                  href="#"
+                  className="rounded-md block px-4 py-1 text-sm text-white data-focus:bg-zinc-900"
+                >
+                  Office Hours
                 </a>
               </MenuItem>
                 

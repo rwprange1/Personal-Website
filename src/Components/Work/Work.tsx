@@ -52,10 +52,7 @@ function Work(){
                     <text className="px-3 py-1.5"> B.S Computer Science</text>
                 </div>
             
-                <div className="  rounded-full flex space-x-2  pb-2">
-                    <img className="w-10 h-10 rounded-full" src="src/assets/clt.png" alt="gran"/> 
-                    <text className="px-3 py-1.5"> M.S Mathematics </text>
-                </div>
+                
 
 
             </div>
