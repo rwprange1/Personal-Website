@@ -7,7 +7,7 @@ function getInTouch(){
     return(
         <div className="flex flex-col lg:flex-row pt-5 pb-0 gap-8 h-[83vh]">
             <div className="flex flex-col text-3xl text-gray-300 break-words w-full lg:w-1/2 outline-2 outline-zinc-700 rounded-2xl p-2 h-1/2">
-                <strong>If you would like to contact me or follow me or follow me on socials please do!</strong> <br/>
+                <strong>If you would like to contact me or follow me on socials please do!</strong> <br/>
                 <text className="text-2xl mt-5"> I plan to be fairly active on LinkedIn and GitHub while continuing to update this website with new projects and updates</text>
             </div>
             <div className="flex flex-col text-3xl text-gray-300 break-words w-full lg:w-1/2 outline-2 outline-zinc-700 rounded-2xl p-2 h-1/2">
