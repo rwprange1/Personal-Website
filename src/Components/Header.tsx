@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { LuMoonStar } from "react-icons/lu";
+import { IoMoonOutline } from "react-icons/io5";
+import { AiFillSun } from "react-icons/ai";
 import { IoIosArrowDown } from "react-icons/io";
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { Link, NavLink } from "react-router-dom";
+import {NavLink } from "react-router-dom";
 
 interface headerProps{
   light: boolean;
@@ -18,14 +18,14 @@ export default function Header(props: headerProps) {
       {/** Large to medium size screens */}
     <div className="hidden md:flex flex-row items-center justify-between pt-4 pb-4">
        
-      <a className="rounded-full bg-zinc-50 text-white hover:outline-1/2 hover:outline-purple-400" href="/">
+      <a className="rounded-full  dark:bg-zinc-50 dark:text-white hover:outline-1/2 hover:outline-purple-400" href="/">
         <img className="w-10 h-10 rounded-full" src="" alt="avatar"/> 
       </a>
               
 
   {/* Center header */}
   <div className="flex-grow flex justify-center mb-2">
-    <header className="flex min-w-xs justify-center bg-zinc-700 rounded-full  lg:w-1/2 w-4/10  text-sm xl:text-md">
+    <header className="flex min-w-xs justify-center bg-amber-900 dark:bg-zinc-700 rounded-full  lg:w-1/2 w-4/10  text-sm xl:text-md">
       <NavLink
         to="/about"
         className="relative p-3 cursor-pointer hover:text-purple-400 text-white"
@@ -112,8 +112,9 @@ export default function Header(props: headerProps) {
   </div>
 
   {/* Right button with margin from wall */}
-  <button className="rounded-full bg-zinc-700 hover:bg-zinc-900 p-3 text-white hover:outline-1 hover:outline-purple-400 px-3 py-1">
-    <LuMoonStar size="2em" />
+  <button className="rounded-full bg-zinc-700 hover:bg-zinc-900 p-3 text-white hover:outline-1 hover:outline-purple-400 px-3 py-1" >
+    < IoMoonOutline size="2em" />
+    <AiFillSun size="2em" />
   </button>
 
 </div>
@@ -190,7 +191,7 @@ export default function Header(props: headerProps) {
       </div>
         {/* Right button with margin from wall */}
         <button className="rounded-full space-x-0.5 bg-zinc-700 hover:bg-zinc-900 p-2 text-gray-400 hover:outline-1 hover:outline-purple-400 px-4 py-1">
-          <LuMoonStar size="1.7em" />
+          <IoMoonOutline size="1.7em" />
         </button>
     </div>
   
