@@ -32,7 +32,7 @@ function Work(){
 
           <a href="" download="Richard-Resume.pdf" className=" w-full text-center rounded-2xl px-2 py-1 bg-zinc-700 hover:bg-zinc-600">Download Resume &darr;</a>
             
-            <hr className="mt-4 w-full border-zinc-700 border-1"></hr>
+            <hr className="mt-4 w-full border-zinc-700 border"></hr>
 
             <h1 className='rounded-full  justify-center  mt-3 flex space-x-3 text-xl'>
                 <GiBookmarklet size="1.4em" />

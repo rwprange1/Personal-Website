@@ -32,7 +32,7 @@ function Schedule(){
         {hours.map((hour, index) => (
           <li
             key={hour}
-            className="border-t-1 border-b-1 border-gray-300  p-3  hover:shadow-sm transition"
+            className="border-t border-b border-gray-300  p-3  hover:shadow-sm transition"
           >
             <div className="text-xl font-medium  mb-1">
               {formatHour(hour)} - {formatHour(hour + 1)}

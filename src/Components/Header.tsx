@@ -28,7 +28,7 @@ export default function Header(props: headerProps) {
               
 
   {/* Center header */}
-  <div className="flex-grow flex justify-center mb-2">
+  <div className="grow flex justify-center mb-2">
     <header className="flex min-w-xs justify-center bg-amber-900 dark:bg-zinc-700 rounded-full  lg:w-1/2 w-4/10  text-sm xl:text-md">
       <NavLink
         to="/about"
@@ -39,7 +39,7 @@ export default function Header(props: headerProps) {
             About
 
             {isActive && (
-              <span className="absolute left-1/2 -translate-x-1/2 -bottom-2.5 h-0.5 w-12 bg-gradient-to-r from-purple-500/0 via-purple-500/60 to-purple-500/0 dark:from-purple-400/0 dark:via-purple-400/60 dark:to-purple-400/0"></span>
+              <span className="absolute left-1/2 -translate-x-1/2 -bottom-2.5 h-0.5 w-12 bg-linear-to-r from-purple-500/0 via-purple-500/60 to-purple-500/0 dark:from-purple-400/0 dark:via-purple-400/60 dark:to-purple-400/0"></span>
             )}
           </span>
         )}
@@ -54,7 +54,7 @@ export default function Header(props: headerProps) {
             Research
 
             {isActive && (
-              <span className="absolute left-1/2 -translate-x-1/2 -bottom-2.5 h-0.5 w-12 bg-gradient-to-r from-purple-500/0 via-purple-500/60 to-purple-500/0 dark:from-purple-400/0 dark:via-purple-400/60 dark:to-purple-400/0"></span>
+              <span className="absolute left-1/2 -translate-x-1/2 -bottom-2.5 h-0.5 w-12 bg-linear-to-r from-purple-500/0 via-purple-500/60 to-purple-500/0 dark:from-purple-400/0 dark:via-purple-400/60 dark:to-purple-400/0"></span>
             )}
           </span>
         )}
@@ -67,7 +67,7 @@ export default function Header(props: headerProps) {
             Projects
 
             {isActive && (
-              <span className="absolute left-1/2 -translate-x-1/2 -bottom-2.5 h-0.5 w-12 bg-gradient-to-r from-purple-500/0 via-purple-500/60 to-purple-500/0 dark:from-purple-400/0 dark:via-purple-400/60 dark:to-purple-400/0"></span>
+              <span className="absolute left-1/2 -translate-x-1/2 -bottom-2.5 h-0.5 w-12 bg-linear-to-r from-purple-500/0 via-purple-500/60 to-purple-500/0 dark:from-purple-400/0 dark:via-purple-400/60 dark:to-purple-400/0"></span>
             )}
           </span>
         )}
@@ -80,7 +80,7 @@ export default function Header(props: headerProps) {
             Contact
 
             {isActive && (
-              <span className="absolute left-1/2 -translate-x-1/2 -bottom-2.5 h-0.5 w-12 bg-gradient-to-r from-purple-500/0 via-purple-500/60 to-purple-500/0 dark:from-purple-400/0 dark:via-purple-400/60 dark:to-purple-400/0"></span>
+              <span className="absolute left-1/2 -translate-x-1/2 -bottom-2.5 h-0.5 w-12 bg-linear-to-r from-purple-500/0 via-purple-500/60 to-purple-500/0 dark:from-purple-400/0 dark:via-purple-400/60 dark:to-purple-400/0"></span>
             )}
           </span>
         )}
@@ -93,7 +93,7 @@ export default function Header(props: headerProps) {
             Schedule
 
             {isActive && (
-              <span className="absolute left-1/2 -translate-x-1/2 -bottom-2.5 h-0.5 w-12 bg-gradient-to-r from-purple-500/0 via-purple-500/60 to-purple-500/0 dark:from-purple-400/0 dark:via-purple-400/60 dark:to-purple-400/0"></span>
+              <span className="absolute left-1/2 -translate-x-1/2 -bottom-2.5 h-0.5 w-12 bg-linear-to-r from-purple-500/0 via-purple-500/60 to-purple-500/0 dark:from-purple-400/0 dark:via-purple-400/60 dark:to-purple-400/0"></span>
             )}
           </span>
         )}
@@ -107,7 +107,7 @@ export default function Header(props: headerProps) {
             Games
 
             {isActive && (
-              <span className="absolute left-1/2 -translate-x-1/2 -bottom-2.5 h-0.5 w-12 bg-gradient-to-r from-purple-500/0 via-purple-500/60 to-purple-500/0 dark:from-purple-400/0 dark:via-purple-400/60 dark:to-purple-400/0"></span>
+              <span className="absolute left-1/2 -translate-x-1/2 -bottom-2.5 h-0.5 w-12 bg-linear-to-r from-purple-500/0 via-purple-500/60 to-purple-500/0 dark:from-purple-400/0 dark:via-purple-400/60 dark:to-purple-400/0"></span>
             )}
           </span>
         )}

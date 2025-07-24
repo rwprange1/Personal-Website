@@ -28,7 +28,7 @@ function Home(){
       </div>
 
 
-      <div className="hidden md:flex relative h-[27rem]">
+      <div className="hidden md:flex relative h-108">
         <div className="absolute left-1/2 transform -translate-x-1/2 w-[120%] flex gap-x-12 h-auto">
           <img src="src/assets/grad.jpg" className="w-1/5  rounded-2xl rotate-355" />
           <img src="src/assets/wf.jpg" className="w-1/5  rounded-2xl rotate-8" />
@@ -39,7 +39,7 @@ function Home(){
       </div>
 
 
-       <div className=" hidden relative h-[27rem]">
+       <div className=" hidden relative h-108">
         <div className="absolute left-1/2 transform -translate-x-1/2 w-[120%] flex gap-x-12 h-auto">
           <img src="src/assets/grad.jpg" className="w-1/5 h-auto rounded-2xl rotate-355" />
           <img src="src/assets/wf.jpg" className="w-1/5 h-auto rounded-2xl rotate-8" />

@@ -8,7 +8,7 @@ function Layout() {
   
   return (
     <div className="flex w-full  dark:bg-black bg-white">
-      <div className="  dark:bg-zinc-800 min-h-[100lvh]  w-full md:w-2/3  outline-1 outline-purple-400  items-center justify-center m-auto relative overflow-x-visible px-6">
+      <div className="  dark:bg-zinc-800 min-h-lvh  w-full md:w-2/3  outline-1 outline-purple-400  items-center justify-center m-auto relative overflow-x-visible px-6">
         <main >
           <Header light={lightMode} />
           <Outlet />

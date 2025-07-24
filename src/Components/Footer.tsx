@@ -7,7 +7,7 @@ function Footer(){
 
     <footer className="bg-white rounded-lg shadow-sm  dark:bg-zinc-800 mt-2 mb-2 ">
         <hr className="-translate-x-1/51 mt-2 w-[104%] px-0 p-0 border-purple-400 bg-purple-400"/>
-        <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <div className="w-full mx-auto max-w-(--breakpoint-xl) p-4 md:flex md:items-center md:justify-between">
 
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025
                 <a href="/" className="hover:underline"> Richard Prange™</a>. All Rights Reserved.

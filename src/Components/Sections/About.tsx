@@ -62,7 +62,7 @@ function About() {
                         </a>
                 </div>
                 <div>
-                    <hr className="h-px my-8 bg-gray-200 border-1 dark:bg-gray-700"/>
+                    <hr className="h-px my-8 bg-gray-200 border dark:bg-gray-700"/>
                     <a href="mailto:rprange@charlotte.edu" target='_blank' className='rounded-full flex space-x-3 text-xl hover:text-purple-400'>
                           <SiMinutemailer size="1.2em" />
                           <text> rprange@charlotte.edu </text>
