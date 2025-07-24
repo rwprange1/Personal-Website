@@ -8,8 +8,12 @@ interface headerProps{
 }
 
 export default function Header(props: headerProps) {
-  
- 
+    const [darkMode, setDarkMode] = useState<boolean>(true);
+
+
+    const toggleMode =() =>{
+      setDarkMode(!darkMode);
+    }  
 
 
   return (
@@ -34,7 +38,13 @@ export default function Header(props: headerProps) {
   </div>
 
   {/* Right button with margin from wall */}
-  <button className="rounded-full bg-zinc-700 hover:bg-zinc-900 p-3 text-white hover:outline-1 hover:outline-purple-400 px-3 py-1">
+ 
+  <button 
+  className="rounded-full bg-zinc-700 hover:bg-zinc-900 p-3 text-white hover:outline-1 hover:outline-purple-400 px-3 py-1"
+  onClick={toggleMode}
+     
+  >
+  
     <LuMoonStar size="2em" />
   </button>
 
@@ -111,10 +121,14 @@ export default function Header(props: headerProps) {
         
       </div>
         {/* Right button with margin from wall */}
-        <button className="rounded-full space-x-0.5 bg-zinc-700 hover:bg-zinc-900 p-2 text-gray-400 hover:outline-1 hover:outline-purple-400 px-4 py-1">
-          <LuMoonStar size="1.7em" />
+         <button 
+          className="rounded-full bg-zinc-700 hover:bg-zinc-900 p-3 text-white hover:outline-1 hover:outline-purple-400 px-3 py-1"
+          onClick={toggleMode}
+            >
+          
+          <LuMoonStar size="2em" />
         </button>
-    </div>
+          </div>
   
 
 
