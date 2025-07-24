@@ -3,26 +3,40 @@ import { AiFillSun } from "react-icons/ai";
 import { IoIosArrowDown } from "react-icons/io";
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import {NavLink } from "react-router-dom";
-
-interface headerProps{
-  light: boolean;
-}
-
-export default function Header(props: headerProps) {
-    const [darkMode, setDarkMode] = useState<boolean>(true);
+import { useState,useEffect } from "react";
 
 
-    const toggleMode =() =>{
-      setDarkMode(!darkMode);
-    }  
 
+export default function Header() {
+     const [darkMode, setDarkMode] = useState<boolean>(() => {
+    // Initial check from DOM
+    return document.documentElement.classList.contains('dark');
+  });
+
+  useEffect(() => {
+    console.log("UPDATING VALUE");
+    console.log('HTML classes:', document.documentElement.className);
+    // Sync the HTML class with state
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [darkMode]); // Only run when darkMode changes
+
+  const toggle = () => {
+    console.log("Toggle called")
+    setDarkMode(prev => !prev); // Flip the state, effect will handle DOM
+  };
+
+   
 
   return (
     <nav>
       {/** Large to medium size screens */}
     <div className="hidden md:flex flex-row items-center justify-between pt-4 pb-4">
        
-      <a className="rounded-full  dark:bg-zinc-50 dark:text-white hover:outline-1/2 hover:outline-purple-400" href="/">
+      <a className="rounded-full  bg-white text-teal-400 dark:bg-zinc-50 dark:text-white hover:outline-1/2 hover:outline-purple-400" href="/">
         <img className="w-10 h-10 rounded-full" src="" alt="avatar"/> 
       </a>
               
@@ -32,7 +46,7 @@ export default function Header(props: headerProps) {
     <header className="flex min-w-xs justify-center bg-amber-900 dark:bg-zinc-700 rounded-full  lg:w-1/2 w-4/10  text-sm xl:text-md">
       <NavLink
         to="/about"
-        className="relative p-3 cursor-pointer hover:text-purple-400 text-white"
+        className="relative p-3 cursor-pointer hover:text-purple-400  text-yellow-500 dark:text-white"
       >
         {({ isActive }) => (
           <span className="relative inline-block">
@@ -119,12 +133,15 @@ export default function Header(props: headerProps) {
  
   <button 
   className="rounded-full bg-zinc-700 hover:bg-zinc-900 p-3 text-white hover:outline-1 hover:outline-purple-400 px-3 py-1" 
-  onClick={toggleMode}
+  onClick={toggle}
      
   >
-  
-    < IoMoonOutline size="2em" />
-    <AiFillSun size="2em" />
+    {darkMode ?
+        <AiFillSun size="2em" /> :
+        < IoMoonOutline size="2em" />
+    }
+   
+    
   </button>
 
 </div>
@@ -134,7 +151,7 @@ export default function Header(props: headerProps) {
       <div className="flex space-x-0.5">
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-full  bg-zinc-700 px-3 py-2 text-sm font-semibold text-white hover:bg-zinc-900 hover:outline-1 hover:outline-purple-400">
+            <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-full bg-white text-amber-700 dark:bg-zinc-700 px-3 py-2 text-sm font-semibold dark:text-white dark:hover:bg-zinc-900 hover:outline-1 hover:outline-purple-400">
               Menu
               <IoIosArrowDown/>
             </MenuButton>

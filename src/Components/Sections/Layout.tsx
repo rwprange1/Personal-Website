@@ -1,23 +1,21 @@
 import {Outlet} from 'react-router-dom';
 import Header from '../Header';
 import Footer from '../Footer';
-import {useState} from 'react';
+
 
 function Layout() {
-  const [lightMode, setLightMode] = useState<boolean>(false);
-  
   return (
-    <div className="flex w-full  dark:bg-black bg-white">
-      <div className="  dark:bg-zinc-800 min-h-lvh  w-full md:w-2/3  outline-1 outline-purple-400  items-center justify-center m-auto relative overflow-x-visible px-6">
-        <main >
-          <Header light={lightMode} />
-          <Outlet />
-          <Footer/>
-
-        </main>
+    <div className="flex flex-col min-h-screen w-full dark:bg-black bg-white">
+      <div className="flex-grow dark:bg-zinc-800 w-full md:w-2/3 outline-1 outline-purple-400 m-auto px-6">
+        <main>
         
+          <Header />
+          <Outlet />
+          <Footer />
+        </main>
       </div>
-    </div>    
+    </div>
   );
-};
+}
+
 export default Layout;
