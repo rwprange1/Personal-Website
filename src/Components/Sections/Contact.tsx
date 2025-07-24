@@ -19,7 +19,7 @@ function getInTouch(){
                 
                     <a href="https://www.linkedin.com/in/richard-p-38804a254" target='_blank' className='rounded-full flex space-x-3 text-xl hover:text-purple-400'>
                         <FaLinkedin size="1.2em" />
-                        <text> See what I'm up too! </text>
+                        <text> See what I'm up to! </text>
                     </a>
 
                     <a href="https://www.youtube.com/@richardp2545" target='_blank' className='rounded-full flex space-x-3 text-xl hover:text-purple-400'>
