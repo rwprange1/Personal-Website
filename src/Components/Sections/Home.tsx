@@ -8,11 +8,11 @@ function Home(){
   
   return (
     <div className="h-auto">
-      <h1 className="text-white text-xl sm:text-4xl mb-3">
+      <h1 className="dark:text-white text-xl sm:text-4xl mb-3">
         Mathematician, Computer Scientist, Mountain Lover
       </h1>
 
-      <h2 className="text-gray-300  sm:text-2xl">
+      <h2 className="text-gray-500  sm:text-2xl">
         I'm Richard, a software engineer and Mathematician at ... I graduated undergrad with a Mathematics and Computer Science degree.
         I am a part time game developer, and I enjoy to cook, play games, and hike.
       </h2>
@@ -53,10 +53,10 @@ function Home(){
 
 
      <div className="flex flex-col lg:flex-row pt-16 pb-0 gap-8">
-        <div className="flex flex-col text-lg text-gray-400 break-words w-full lg:w-1/2">
+        <div className="flex flex-col text-lg text-gray-500 break-words w-full lg:w-1/2">
           <List />
         </div>
-        <div className="flex flex-col text-lg text-gray-400 break-words w-full lg:w-1/2">
+        <div className="flex flex-col text-lg text-gray-500 break-words w-full lg:w-1/2">
           
           <Work />          
         </div>

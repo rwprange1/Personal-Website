@@ -36,17 +36,19 @@ export default function Header() {
       {/** Large to medium size screens */}
     <div className="hidden md:flex flex-row items-center justify-between pt-4 pb-4">
        
-      <a className="rounded-full  bg-white text-teal-400 dark:bg-zinc-50 dark:text-white hover:outline-1/2 hover:outline-purple-400" href="/">
-        <img className="w-10 h-10 rounded-full" src="" alt="avatar"/> 
-      </a>
+
+       <NavLink to="/" className="rounded-full  bg-white text-teal-400 dark:bg-zinc-50 dark:text-white hover:outline-1/2 hover:outline-purple-400">
+          <img className="w-10 h-10 rounded-full" src="" alt="avatar"/> 
+       </NavLink>
+      
               
 
   {/* Center header */}
   <div className="grow flex justify-center mb-2">
-    <header className="flex min-w-xs justify-center bg-amber-900 dark:bg-zinc-700 rounded-full  lg:w-1/2 w-4/10  text-sm xl:text-md">
+    <header className="flex min-w-xs justify-center bg-inherit border-1 border-gray-300 dark:border-none dark:bg-zinc-700 rounded-full  lg:w-1/2 w-4/10  text-sm xl:text-md text-neutral-600 dark:text-white">
       <NavLink
         to="/about"
-        className="relative p-3 cursor-pointer hover:text-purple-400  text-yellow-500 dark:text-white"
+        className="relative p-3 cursor-pointer hover:text-purple-400  "
       >
         {({ isActive }) => (
           <span className="relative inline-block">
@@ -60,7 +62,7 @@ export default function Header() {
       </NavLink>
 
 
-      <NavLink to="/research" className=" relative p-3 cursor-pointer text-white hover:text-purple-400"
+      <NavLink to="/research" className=" relative p-3 cursor-pointer hover:text-purple-400"
       
       >
         {({ isActive }) => (
@@ -73,7 +75,7 @@ export default function Header() {
           </span>
         )}
       </NavLink>
-      <NavLink to="/projects" className=" relative p-3 cursor-pointer text-white hover:text-purple-400"
+      <NavLink to="/projects" className=" relative p-3 cursor-pointer hover:text-purple-400"
       
       >
         {({ isActive }) => (
@@ -86,7 +88,7 @@ export default function Header() {
           </span>
         )}
       </NavLink>
-      <NavLink to="/contact" className=" relative p-3 cursor-pointer text-white hover:text-purple-400"
+      <NavLink to="/contact" className=" relative p-3 cursor-pointer hover:text-purple-400 "
       
       >
         {({ isActive }) => (
@@ -99,7 +101,7 @@ export default function Header() {
           </span>
         )}
       </NavLink>
-      <NavLink to="/hours" className=" relative p-3 cursor-pointer text-white hover:text-purple-400"
+      <NavLink to="/hours" className=" relative p-3 cursor-pointer hover:text-purple-400"
       
       >
         {({ isActive }) => (
@@ -113,7 +115,7 @@ export default function Header() {
         )}
       </NavLink>
 
-      <NavLink to="/games" className=" relative p-3 cursor-pointer text-white hover:text-purple-400"
+      <NavLink to="/games" className=" relative p-3 cursor-pointer hover:text-purple-400"
       
       >
         {({ isActive }) => (
@@ -132,13 +134,13 @@ export default function Header() {
   {/* Right button with margin from wall */}
  
   <button 
-  className="rounded-full bg-zinc-700 hover:bg-zinc-900 p-3 text-white hover:outline-1 hover:outline-purple-400 px-3 py-1" 
+  className="rounded-full border-1 border-gray-300 dark:border-none bg-white dark:bg-zinc-700 dark:hover:bg-zinc-900 p-3 dark:text-white hover:outline-1 hover:outline-purple-400 px-2 py-1" 
   onClick={toggle}
      
   >
     {darkMode ?
-        <AiFillSun size="2em" /> :
-        < IoMoonOutline size="2em" />
+        <AiFillSun color="yellow" size="1.2em" /> :
+        < IoMoonOutline size="1.2em" />
     }
    
     

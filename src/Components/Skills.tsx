@@ -10,15 +10,15 @@ function Skills(){
 
 
     return(
-        <div className="rounded-2xl  content-center text-white">
-            <h1 className='rounded-full text-5xl  justify-center  flex space-x-3 md:text-4xl text-gray-300 '>
+        <div className="rounded-2xl  content-center text-neutral-600 dark:text-white">
+            <h1 className='rounded-full text-5xl  justify-center  flex space-x-3 md:text-4xl dark:text-gray-300 '>
                 <text> Skills  </text>
             </h1>
             <div className="flex flex-col lg:flex-row p-2 gap-8 content-center justify-center">
                 {/** Box 1 */}
             <div className="flex flex-col lg:flex-row self-center  gap-8 rounded-2xl outline-zinc-700 outline-2 w-full md:w-1/2 text-2xl md:text-xl">
                 <div className="flex flex-col  break-words w-full ">
-                    <strong className="self-center text-4xl md:text-3xl p-2 text-gray-500"> Languages</strong> 
+                    <strong className="self-center text-4xl md:text-3xl p-2 dark:text-gray-500"> Languages</strong> 
                     <ul className="self-center space-y-1  list-inside ">
                         <li>
                         <div className="rounded-full flex space-x-2 pb-2">
@@ -66,7 +66,7 @@ function Skills(){
                 </div>
                 <div className="flex flex-col  break-words w-full ">
                     <strong className="self-center text-4xl md:text-3xl text-gray-500 p-2"> Frameworks</strong> 
-                    <ul className="self-center space-y-1 text-white  list-inside  ">
+                    <ul className="self-center space-y-1   list-inside  ">
                         <li>
                         <div className="rounded-full flex space-x-2 pb-2">
                                 <FaReact size="1.5em"/>
@@ -101,7 +101,7 @@ function Skills(){
         <div className="flex flex-col lg:flex-row self-center  gap-8 rounded-2xl outline-zinc-700 outline-2 w-full md:w-1/2 text-2xl md:text-xl min-h-[300px]">
             <div className="flex flex-col   break-words w-full ">
                 <strong className="self-center text-4xl md:text-3xl  text-gray-500  p-2"> Databases</strong> 
-                <ul className="self-center space-y-1 text-white list-inside  ">
+                <ul className="self-center space-y-1  list-inside  ">
                     <li>
                         <div className="rounded-full flex space-x-2 pb-2">
                             <DiMysql size="1.5em"/>
@@ -121,7 +121,7 @@ function Skills(){
             </div>
             <div className="flex flex-col  break-words w-full  ">
                 <strong className="self-center text-gray-500 text-4xl md:text-3xl p-2"> Other Tools</strong> 
-                <ul className="self-center space-y-1 text-white  list-inside  ">
+                <ul className="self-center space-y-1   list-inside  ">
                     <li>
                         <div className="rounded-full flex space-x-2 pb-2">
                             <IoLogoGithub size="1.5em"/>

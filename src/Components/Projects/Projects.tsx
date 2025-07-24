@@ -89,7 +89,7 @@ function Projects(){
     return(
         <div >
 
-            <h1 className='rounded-full  justify-center  flex space-x-3 text-4xl mb-5 text-gray-300 '>
+            <h1 className='rounded-full  justify-center  flex space-x-3 text-4xl mb-5 text-gray-500 '>
                 <text> Featured Projects  </text>
             </h1>
 

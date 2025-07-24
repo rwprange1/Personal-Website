@@ -8,9 +8,9 @@ function About() {
     return (
         <div className="flex flex-col lg:flex-row pt-16 pb-0 gap-8">
 
-            <div className="flex flex-col text-lg text-gray-400 mb-3 wrap-break-word w-full lg:w-1/2">
+            <div className="flex flex-col text-lg  text-neutral-600 dark:text-gray-500 mb-3 wrap-break-word w-full lg:w-1/2">
                 
-                <h1 className="text-xl sm:text-5xl p-5 pb-4 text-white">
+                <h1 className="text-xl sm:text-5xl p-5 pb-4 dark:text-white">
                     I'm Richard Prange, I live in Charlotte, North Carolina where I attend UNC Charlotte.
                 </h1>
 
@@ -41,7 +41,7 @@ function About() {
 
 
             </div>
-            <div className="flex flex-col text-gray-400 text-xl sm:text-3xl mb-3 wrap-break-word w-full lg:w-1/2 p-5">
+            <div className="flex flex-col text-neutral-600 dark:text-gray-500 text-xl sm:text-3xl mb-3 wrap-break-word w-full lg:w-1/2 p-5">
                 <div className="flex p-5 w-auto h-1/2">
                     <img src="src/assets/grad.jpg" className="rounded-2xl rotate-355" />
                 </div>
