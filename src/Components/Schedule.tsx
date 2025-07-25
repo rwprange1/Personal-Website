@@ -27,7 +27,7 @@ function Schedule(){
   }, []);
 
   return (
-    <div className="max-w-md mx-auto mt-3  text-neutral-600 dark:text-gray-400   ">
+    <div className="max-w-md mt-3  text-neutral-600 dark:text-gray-400   ">
       <ul >
         {hours.map((hour, index) => (
           <li

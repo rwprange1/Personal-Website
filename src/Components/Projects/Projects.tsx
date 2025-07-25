@@ -140,16 +140,16 @@ function Projects(){
                 <ProjectElement data={obj[GANAL]} />
             </div>
 
-
             
         </div>
         
-        <div className='visible xl:hidden'>
+        <div className='visible xl:hidden '>
             <div className="">
-                  <div className="overflow-hidden rounded-lg justify-centerr">
-                    <ProjectElement
-                            data={obj[currentIndex]}
-                    />
+                <h1 className='rounded-full  justify-center  flex space-x-3 text-4xl mb-5 text-gray-500 '>
+                <text> Featured Projects  </text>
+            </h1>
+                  <div className="flex justify-center overflow-hidden rounded-lg">
+                    <ProjectElement data={obj[currentIndex]} />
                   </div>
             
                   <div className='flex-row -translate-y-40'>

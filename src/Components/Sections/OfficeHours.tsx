@@ -8,7 +8,7 @@ function OfficeHours(){
                 <text>However I am available through email and can make appointments</text>
             </div>
   
-            <div className="grid grid-cols-5 mt-4  mb-4 text-neutral-600 dark:text-gray-300 border">
+            <div className="grid grid-cols-5 mt-4 text-lg md:text-xl mb-4 text-neutral-600 dark:text-gray-300 border">
                 <div className="font-bold text-center border">
                     <strong>Monday</strong>
                     <Schedule/>
