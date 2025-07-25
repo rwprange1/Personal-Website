@@ -38,7 +38,7 @@ export default function Header() {
        
 
        <NavLink to="/" className="rounded-full  bg-white text-teal-400 dark:bg-zinc-50 dark:text-white hover:outline-1/2 hover:outline-purple-400">
-          <img className="w-10 h-10 rounded-full" src="" alt="avatar"/> 
+          <img className="w-10 h-10 rounded-full" src="null" alt="avatar"/> 
        </NavLink>
       
               
@@ -129,31 +129,25 @@ export default function Header() {
         )}
       </NavLink>
     </header>
-  </div>
-
-  {/* Right button with margin from wall */}
- 
-  <button 
-  className="rounded-full border-1 border-gray-300 dark:border-none bg-white dark:bg-zinc-700 dark:hover:bg-zinc-900 p-3 dark:text-white hover:outline-1 hover:outline-purple-400 px-2 py-1" 
-  onClick={toggle}
-     
-  >
-    {darkMode ?
-        <AiFillSun color="yellow" size="1.2em" /> :
-        < IoMoonOutline size="1.2em" />
-    }
-   
-    
-  </button>
-
-</div>
+    </div>
+      {/* Right button with margin from wall */}
+      <button 
+      className="rounded-full border-1 border-gray-300 dark:border-none bg-white dark:bg-zinc-700 dark:hover:bg-zinc-900 p-3 dark:text-white hover:outline-1 hover:outline-purple-400 px-2 py-1" 
+      onClick={toggle}
+      >
+        {darkMode ?
+            <AiFillSun color="yellow" size="1.2em" /> :
+            < IoMoonOutline size="1.2em" />
+        }
+      </button>
+    </div>
 
     {/** Mobile*/}
     <div className="md:hidden flex place-content-end py-2 space-x-3">
       <div className="flex space-x-0.5">
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-full bg-white text-amber-700 dark:bg-zinc-700 px-3 py-2 text-sm font-semibold dark:text-white dark:hover:bg-zinc-900 hover:outline-1 hover:outline-purple-400">
+            <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-full bg-white text-neutrak-600 dark:bg-zinc-700 px-3 py-2 text-sm font-semibold dark:text-white dark:hover:bg-zinc-900 hover:outline-1 hover:outline-purple-400">
               Menu
               <IoIosArrowDown/>
             </MenuButton>
@@ -165,52 +159,61 @@ export default function Header() {
           >
             <div className="py-1">
               <MenuItem>
-                <button className="rounded-full bg-zinc-50 text-white hover:outline-1 hover:outline-purple-400">
-                  <img className="w-10 h-10 rounded-full" src="" alt="avatar"/> 
-                </button>
+                 <NavLink to="/" className="rounded-full bg-white text-teal-400 dark:bg-zinc-50 dark:text-white hover:outline-1/2 hover:outline-purple-400">
+                    <img className="w-10 h-10 rounded-full" src="null" alt="avatar"/> 
+                  </NavLink>
               </MenuItem>
 
               <MenuItem>
-                <a
-                  href="#"
+                <NavLink
+                  to="/about"
                   className="rounded-md block px-4 py-1 text-sm text-white data-focus:bg-zinc-900"
                 >
                   About
-                </a>
+                </NavLink>
               </MenuItem>
               <MenuItem>
-                <a
-                  href="#"
+                <NavLink
+                  to="/research"
                   className="rounded-md block px-4 py-1 text-sm text-white data-focus:bg-zinc-900"
                 >
                   Research
-                </a>
+                </NavLink>
               </MenuItem>
               <MenuItem>
-                <a
-                  href="#"
+               <NavLink
+                  to="/projects"
                   className="rounded-md block px-4 py-1 text-sm text-white data-focus:bg-zinc-900"
                 >
                   Projects
-                </a>
+                </NavLink>
               </MenuItem>
                 
               <MenuItem>
-                <a
-                  href="#"
+                <NavLink
+                  to="/contact"
                   className="rounded-md block px-4 py-1 text-sm text-white data-focus:bg-zinc-900"
                 >
                   Contact
-                </a>
+                </NavLink>
               </MenuItem>
 
               <MenuItem>
-                <a
-                  href="#"
+                <NavLink
+                  to="/hours"
                   className="rounded-md block px-4 py-1 text-sm text-white data-focus:bg-zinc-900"
                 >
-                  Office Hours
-                </a>
+                  Schedule
+                </NavLink>
+              </MenuItem>
+
+              <MenuItem>
+                <NavLink
+                  to="/hours"
+                  className="rounded-md block px-4 py-1 text-sm text-white data-focus:bg-zinc-900"
+                >
+                  Games
+                </NavLink>
               </MenuItem>
                 
             </div>
@@ -219,10 +222,18 @@ export default function Header() {
         
       </div>
         {/* Right button with margin from wall */}
-        <button className="rounded-full space-x-0.5 bg-zinc-700 hover:bg-zinc-900 p-2 text-gray-400 hover:outline-1 hover:outline-purple-400 px-4 py-1">
-          <IoMoonOutline size="1.7em" />
-        </button>
-          </div>
+       
+ 
+      <button 
+        className="rounded-full border-1 border-gray-300 dark:border-none bg-white dark:bg-zinc-700 dark:hover:bg-zinc-900 p-3 dark:text-white hover:outline-1 hover:outline-purple-400 px-2 py-1" 
+        onClick={toggle}
+      >
+        {darkMode ?
+          <AiFillSun color="yellow" size="1.2em" /> :
+          < IoMoonOutline size="1.2em" />
+        }
+      </button>
+      </div>
   
 
 

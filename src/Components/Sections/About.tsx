@@ -43,7 +43,7 @@ function About() {
             </div>
             <div className="flex flex-col text-neutral-600 dark:text-gray-500 text-xl sm:text-3xl mb-3 wrap-break-word w-full lg:w-1/2 p-5">
                 <div className="flex p-5 w-auto h-1/2">
-                    <img src="src/assets/grad.jpg" className="rounded-2xl rotate-355" />
+                    <img src="src/assets/grad.jpg" className="rounded-2xl md:rotate-355" />
                 </div>
 
 
@@ -60,15 +60,14 @@ function About() {
                           <text> See what I'm up to! </text>
 
                         </a>
-                </div>
-                <div>
-                    <hr className="h-px my-8 bg-gray-200 border dark:bg-gray-700"/>
-                    <a href="mailto:rprange@charlotte.edu" target='_blank' className='rounded-full flex space-x-3 text-xl hover:text-purple-400'>
+                        <hr className="hidden md:flex h-px my-4 md:my-6 bg-gray-200 border dark:bg-gray-700"/>
+                        <a href="mailto:rprange@charlotte.edu" target='_blank' className='rounded-full flex space-x-3 text-xl hover:text-purple-400'>
                           <SiMinutemailer size="1.2em" />
                           <text> rprange@charlotte.edu </text>
                           
                         </a>
                 </div>
+               
                 
 
             </div>

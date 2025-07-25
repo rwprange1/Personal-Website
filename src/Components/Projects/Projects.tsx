@@ -1,5 +1,6 @@
+import {useState} from 'react';
 import ProjectElement from "./ProjectElement";
-
+import { BsChevronDoubleRight,BsChevronDoubleLeft } from "react-icons/bs";
 
 interface jsonObject{
     title: string,
@@ -85,9 +86,31 @@ function Projects(){
 
     ];
 
+    const [currentIndex, setCurrentIndex] = useState(0);
+    
+   
+    
+      const prevSlide = () => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === 0 ? obj.length - 1 : prevIndex - 1
+        );
+      };
+    
+      const nextSlide = () => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === obj.length - 1 ? 0 : prevIndex + 1
+        );
+      };
+    
+      const goToSlide = (index: number) => {
+        setCurrentIndex(index);
+      };
+    
+
 
     return(
-        <div >
+        <>
+        <div className='hidden xl:block' >
 
             <h1 className='rounded-full  justify-center  flex space-x-3 text-4xl mb-5 text-gray-500 '>
                 <text> Featured Projects  </text>
@@ -95,31 +118,80 @@ function Projects(){
 
             <div className="flex space-x-10 columns-3 mb-5">
                 {/** Chess */}
-                <ProjectElement title={obj[CHESS].title} img={obj[CHESS].img} desc={obj[CHESS].desc}  link={obj[CHESS].link}/>
+                <ProjectElement data={obj[CHESS]}/>
                 {/** BattleShip */}
-                <ProjectElement title={obj[BATTLE_SHIP].title} img={obj[BATTLE_SHIP].img} desc={obj[BATTLE_SHIP].desc}  link={obj[BATTLE_SHIP].link}/>
+                <ProjectElement data={obj[BATTLE_SHIP]} />
                 {/** WheeBFit */}
-                <ProjectElement title={obj[WHEE_B_FIT].title} img={obj[WHEE_B_FIT].img} desc={obj[WHEE_B_FIT].desc}  link={obj[WHEE_B_FIT].link}/>
+                <ProjectElement data={obj[WHEE_B_FIT]} />
             </div>
             <div className="flex space-x-10 justify-center mb-5">
                 {/** Rusty Shell */}
-                <ProjectElement title={obj[RUSTY_SHELL].title} img={obj[RUSTY_SHELL].img} desc={obj[RUSTY_SHELL].desc}  link={obj[RUSTY_SHELL].link}/>
+                <ProjectElement data={obj[RUSTY_SHELL]} />
                 {/** Rusty Bastion */}
-                <ProjectElement title={obj[BASTIONS].title} img={obj[BASTIONS].img} desc={obj[BASTIONS].desc}  link={obj[BASTIONS].link}/>
+                <ProjectElement data={obj[BASTIONS]} />
             </div>
 
             <div className="flex space-x-10 columns-3 mb-5">
                 {/** C++ Balls */}
-                <ProjectElement title={obj[BALLS_LAUNCH].title} img={obj[BALLS_LAUNCH].img} desc={obj[BALLS_LAUNCH].desc}  link={obj[BALLS_LAUNCH].link}/>
+                <ProjectElement data={obj[BALLS_LAUNCH]}/>
                 {/** C++ Balls */}
-                <ProjectElement title={obj[BALLS_STATIC].title} img={obj[BALLS_STATIC].img} desc={obj[BALLS_STATIC].desc}  link={obj[BALLS_STATIC].link}/>
-                {/** C++ Balls */}
-                <ProjectElement title={obj[GANAL].title} img={obj[GANAL].img} desc={obj[GANAL].desc}  link={obj[GANAL].link}/>
+                <ProjectElement data={obj[BALLS_STATIC]} />
+                {/** GANAL */}
+                <ProjectElement data={obj[GANAL]} />
             </div>
 
 
             
         </div>
+        
+        <div className='visible xl:hidden'>
+            <div className="">
+                  <div className="overflow-hidden rounded-lg justify-centerr">
+                    <ProjectElement
+                            data={obj[currentIndex]}
+                    />
+                  </div>
+            
+                  <div className='flex-row -translate-y-40'>
+                     {/* Prev Button */}
+                        <button
+                            onClick={prevSlide}
+                            className="absolute  left-1 -translate-y-1/2  bg-purple-400 hover:bg-purple-500 dark:bg-white/80 dark:hover:bg-white px-2 py-1 rounded-full shadow cursor-pointer"
+                        >
+                            <BsChevronDoubleLeft />
+                        </button>
+            
+                        {/* Next Button */}
+                        <button
+                            onClick={nextSlide}
+                            className="absolute  right-1   -translate-y-1/2 bg-purple-400 hover:bg-purple-500 dark:bg-white/80 dark:hover:bg-white px-2 py-1 rounded-full shadow cursor-pointer"
+                        >
+                            <BsChevronDoubleRight />
+                        </button>
+            
+                  </div>
+            
+                 
+            
+                  {/* Dots Indicator */}
+                  <div className="flex justify-center py-1 space-x-2">
+                    {obj.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => goToSlide(index)}
+                        className={`h-3 w-3 rounded-full transition-colors duration-300 cursor-pointer ${
+                          index === currentIndex ? 'bg-purple-500 dark:bg-purple-400' : 'bg-gray-300'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                </div>
+
+        </div>
+        
+        
+        </>
+        
     );
 }
 
