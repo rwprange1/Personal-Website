@@ -1,44 +1,26 @@
-import { useState, useMemo } from "react";
 
 
-function Schedule(){
-    const hours = Array.from({ length: 8 }, (_, i) => 9 + i); // 9AM–5PM
+interface ScheduleProps{
+  list: String[]
+}
 
-  const formatHour = (hour: number) => {
-    const period = hour >= 12 ? 'PM' : 'AM';
-    const formatted = hour > 12 ? hour - 12 : hour;
-    return `${formatted}:00 ${period}`;
-  };
+function Schedule(props: ScheduleProps){
+  const hours = Array.from({ length: 10 }, (_, i) => 9 + i); // 9AM–7PM
 
-  // Generate mock data with 3 "hello" and 2 "office hours"
-  const timeBlocks = useMemo(() => {
-    const labels = Array(hours.length).fill('');
-    const indices = [...Array(hours.length).keys()];
 
-    const shuffle = (array: number[]) =>
-      array.sort(() => Math.random() - 0.5);
-
-    const shuffled = shuffle(indices);
-
-    shuffled.slice(0, 3).forEach((i) => (labels[i] = 'hello'));
-    shuffled.slice(3, 5).forEach((i) => (labels[i] = 'office hours'));
-
-    return labels;
-  }, []);
+ 
 
   return (
     <div className="max-w-md mt-3  text-neutral-600 dark:text-gray-400   ">
-      <ul >
+      <ul  >
         {hours.map((hour, index) => (
           <li
             key={hour}
-            className="border-t border-b border-gray-300  p-3  hover:shadow-sm transition"
+            className="border-t border-b border-gray-300  p-1  hover:shadow-sm transition  max-h-12 min-h-12"
           >
-            <div className="text-xl font-medium  mb-1">
-              {formatHour(hour)} - {formatHour(hour + 1)}
-            </div>
-            <div className="text-lg ">
-              {timeBlocks[index] || <span className=" italic">—</span>}
+            
+            <div className="text-lg dark:text-green-800 text-blue-600 text-">
+              {props.list[index] }
             </div>
           </li>
         ))}
