@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
 import { BsChevronDoubleRight,BsChevronDoubleLeft } from "react-icons/bs";
 
-
+import grad from '../assets/grad.jpg';
+import wf from '../assets/wf.jpg';
+import maa from '../assets/maa.jpg'
+import park from '../assets/park.jpg'
+import lebon from '../assets/lebon.jpg'
 
 const Carousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images: string[] = [
-    'src/assets/grad.jpg',
-    'src/assets/wf.jpg',
-    'src/assets/bl.jpg',
-    'src/assets/park.jpg',
-    'src/assets/guermo.jpg',
+    grad,
+    wf,
+    maa,
+    park,
+    lebon
   ];
 
   const prevSlide = () => {

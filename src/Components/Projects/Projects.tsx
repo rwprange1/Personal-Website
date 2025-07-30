@@ -2,6 +2,16 @@ import {useState} from 'react';
 import ProjectElement from "./ProjectElement";
 import { BsChevronDoubleRight,BsChevronDoubleLeft } from "react-icons/bs";
 
+import chess from '../../assets/Chess.png';
+import bs from '../../assets/bs.png'
+import wbf from '../../assets/wbf.png';
+import shell from '../../assets/rustacean-flat-happy.png'
+import bat from '../../assets/castle.jpg';
+import stat from '../../assets/push.gif'
+import float from '../../assets/ballsv2g.gif';
+import gn from '../../assets/graph.png'
+
+
 interface jsonObject{
     title: string,
     desc: string,
@@ -23,7 +33,7 @@ function Projects(){
     
    
     {
-        "img": "src/assets/Chess.png",
+        "img": chess,
         "title": "Java Chess Application",
         "desc": "A 2 and 4 player implementation of Chess utilizing JavaFX to provide users with the ability to play " +
         "on the command line or through a graphical interface",
@@ -31,7 +41,7 @@ function Projects(){
    
     },
     {
-        "img": "src/assets/bs.png",
+        "img": bs,
         "title": "Rust N-Player BattleShip",
         "desc": "A N-Player BattleShip game, which utilizes threads and shared memory to allow N-players to connect to " + 
         "a server and continously send and recieve data (art from: https://www.pixilart.com/art/battle-burdened-battle-hardened-sr2095a57b5ecaws3?ft=tags&ft_id=)",
@@ -39,7 +49,7 @@ function Projects(){
 
     },
     {
-        "img": "src/assets/wbf.png",
+        "img": wbf,
         "title": "WheeBFit a Full Stack Web Application",
         "desc": "An educational fitness and nutrition app for educators and students. Developed in TypeScript, utilizing " +
         "Express, React, and Tailwind. Containerized using Docker and deployed on Heroku",
@@ -47,14 +57,14 @@ function Projects(){
  
     },
     {
-        "img": "src/assets/rustacean-flat-happy.png",
+        "img": shell,
         "title": "A Rusty Shell",
         "desc": "In immitation of a unix-shell built in rust utilizing syscalls",
         "link": "",
 
     },
     {
-        "img": "src/assets/castle.jpg",
+        "img": bat,
         "title": "Rust Bastions",
         "desc": "A rust programs which models a central command sending and recieving resources from 3 outposts(bastions) " +
         "this program utilizes threading and shared memory to produce, distribute, and transport goods between command and bastions",
@@ -62,21 +72,21 @@ function Projects(){
 
     },
      {
-        "img": "src/assets/ballsv2g.gif",
+        "img": float,
         "title": "C++ Balls :)",
         "desc": "A simple C++ and SFML program which spawns balls and launches them then detects and corrects collisions (frictionless)",
         "link": "",
 
     },
      {
-        "img": "src/assets/push.gif",
+        "img": stat,
         "title": "C++ Balls :)",
         "desc": "A simple C++ and SFML program which spawns static moveable then detects and corrects collisions",
         "link": "",
 
     },
      {
-        "img": "src/assets/graph.png",
+        "img": gn,
         "title": "Java Graph Analyzer",
         "desc": "A Java application which allows a user to traverse a graph",
         "link": "",

@@ -5,7 +5,7 @@ import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import {NavLink } from "react-router-dom";
 import { useState,useEffect } from "react";
 
-
+import dip from "../assets/dip.jpg";
 
 export default function Header() {
      const [darkMode, setDarkMode] = useState<boolean>(() => {
@@ -38,7 +38,7 @@ export default function Header() {
        
 
        <NavLink to="/" className="rounded-full  bg-white text-teal-400 dark:bg-zinc-50 dark:text-white hover:outline-1/2 hover:outline-purple-400">
-          <img className="w-10 h-10 rounded-full" src="null" alt="avatar"/> 
+          <img className="w-10 h-10 rounded-full" src={dip} alt="avatar"/> 
        </NavLink>
       
               

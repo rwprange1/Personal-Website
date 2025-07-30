@@ -1,6 +1,9 @@
 import { FaTools } from "react-icons/fa";
 import { GiBookmarklet } from "react-icons/gi";
 
+import wcu from '../../assets/wcu.webp';
+import clt from '../../assets/clt.png'
+import gran from '../../assets/granges_logo_thumb.png'
 function Work(){
     return(
         <div className="flex flex-col text-md md:text-lg rounded-md  text-neutral-600 dark:text-gray-400 p-2  outline-1 outline-gray-300 dark:outline-zinc-700 dark:outline-2 mb-2">
@@ -12,16 +15,16 @@ function Work(){
 
             <div className="pt-5 p-1  ">
                 <div className="rounded-full flex space-x-2 pb-2">
-                    <img className="w-10 h-10 rounded-full" src="src/assets/granges_logo_thumb.png" alt="gran"/> 
+                    <img className="w-10 h-10 rounded-full" src={gran} alt="gran"/> 
                     <text className="px-3 py-1.5"> Quality and Technical Intern </text>
                 </div> 
                 <div className="  rounded-full flex space-x-2  pb-2">
-                    <img className="w-10 h-10 rounded-full" src="src/assets/wcu.webp" alt="gran"/> 
+                    <img className="w-10 h-10 rounded-full" src={wcu} alt="gran"/> 
                     <text className="px-3 py-1.5"> Mathematics and Computer Science Tutor </text>
                 </div>
             
                 <div className="  rounded-full flex space-x-2  pb-2">
-                    <img className="w-10 h-10 rounded-full" src="src/assets/clt.png" alt="gran"/> 
+                    <img className="w-10 h-10 rounded-full" src={clt} alt="gran"/> 
                     <text className="px-3 py-1.5"> Graduate Assistant </text>
                 </div>
 
@@ -42,11 +45,11 @@ function Work(){
 
             <div className="pt-5 p-1 border-spacing-y-2  ">
                 <div className="rounded-full flex space-x-2 pb-2">
-                    <img className="w-10 h-10 rounded-full" src="src/assets/wcu.webp" alt="gran"/> 
+                    <img className="w-10 h-10 rounded-full" src={wcu} alt="gran"/> 
                     <text className="px-3 py-1.5"> B.S Traditional Mathematics </text>
                 </div> 
                 <div className="  rounded-full flex space-x-2  pb-2">
-                    <img className="w-10 h-10 rounded-full" src="src/assets/wcu.webp" alt="gran"/> 
+                    <img className="w-10 h-10 rounded-full" src={wcu} alt="gran"/> 
                     <text className="px-3 py-1.5"> B.S Computer Science</text>
                 </div>
             
