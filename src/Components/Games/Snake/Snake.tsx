@@ -8,14 +8,14 @@ function Snake() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
 
-    const draw = (ctx: CanvasRenderingContext2D ) => {
-
-    }
+    // const draw = (ctx: CanvasRenderingContext2D ) => {
+    //     <Canvas ref={canvasRef} draw={draw}/>
+    // }
 
     return(
         <GameWrapper>
 
-            <Canvas ref={canvasRef} draw={draw}/>
+        
 
         </GameWrapper>
 
