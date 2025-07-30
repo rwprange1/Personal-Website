@@ -1,7 +1,7 @@
 import Carousel from "./Carousel";
 
-import grad from './assets/grad.jpg';
-import wf from './assets/wf.jpg';
+import grad from '../assets/grad.jpg';
+import wf from '../assets/wf.jpg';
 
 
 function Photos(){
