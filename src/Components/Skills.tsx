@@ -16,7 +16,7 @@ function Skills(){
             </h1>
             <div className="flex flex-col lg:flex-row p-2 gap-8 content-center justify-center">
                 {/** Box 1 */}
-            <div className="flex flex-col lg:flex-row self-center gap-2 md:gap-8 rounded-2xl outline-1 outline-gray-300 dark:outline-zinc-700 dark:outline-2 w-full md:w-1/2 text-xl md:text-2xl">
+            <div className="flex flex-col  xl:min-h-[328px] lg:flex-row self-center gap-2 md:gap-8 rounded-2xl outline-1 outline-gray-300 dark:outline-zinc-700 dark:outline-2 w-full md:w-1/2 text-xl md:text-2xl">
                 <div className="flex flex-col break-words w-full ">
                     <strong className="self-center text-2xl md:text-3xl p-2 dark:text-gray-500"> Languages</strong> 
                     <ul className="self-center space-y-1 list-inside  ">
@@ -99,7 +99,7 @@ function Skills(){
                 </div>
         </div>
         {/** Box 2 */}
-        <div className="flex flex-col lg:flex-row self-center gap-2 md:gap-8 rounded-2xl outline-1 outline-gray-300 dark:outline-zinc-700 dark:outline-2 w-full md:w-1/2 text-xl md:text-2xl">
+        <div className="flex flex-col lg:flex-row xl:min-h-[328px] self-center gap-2 md:gap-8 rounded-2xl outline-1 outline-gray-300 dark:outline-zinc-700 dark:outline-2 w-full md:w-1/2 text-xl md:text-2xl">
             <div className="flex flex-col   break-words w-full ">
                 <strong className="self-center text-2xl md:text-3xl  text-gray-500  p-2">Databases</strong> 
                 <ul className="self-center space-y-1  list-inside  ">

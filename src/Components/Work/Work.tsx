@@ -4,6 +4,8 @@ import { GiBookmarklet } from "react-icons/gi";
 import wcu from '../../assets/wcu.webp';
 import clt from '../../assets/clt.png'
 import gran from '../../assets/granges_logo_thumb.png'
+
+
 function Work(){
     return(
         <div className="flex flex-col text-md md:text-lg rounded-md  text-neutral-600 dark:text-gray-400 p-2  outline-1 outline-gray-300 dark:outline-zinc-700 dark:outline-2 mb-2">
@@ -31,7 +33,7 @@ function Work(){
 
             </div>
 
-          <a href="" download="Richard-Resume.pdf" className=" w-full text-center rounded-2xl px-2 py-1 text-white bg-purple-500  hover:bg-purple-600  dark:bg-zinc-700 dark:hover:bg-zinc-600">Download Resume &darr;</a>
+          <a href="/res.pdf" download="Richard-Resume.pdf" className=" w-full text-center rounded-2xl px-2 py-1 text-white bg-purple-500  hover:bg-purple-600  dark:bg-zinc-700 dark:hover:bg-zinc-600">Download Resume &darr;</a>
             
             <hr className="mt-4 w-full outline-1 outline-gray-300 dark:outline-zinc-700 dark:outline-2"></hr>
 
@@ -57,7 +59,7 @@ function Work(){
 
 
             </div>
-            <a href="" download="Richard-trans.pdf" className="p-2 w-full text-center rounded-2xl text-white px-2 py-1 bg-purple-500  hover:bg-purple-600 dark:bg-zinc-700 dark:hover:bg-zinc-600">Download Transcript &darr;</a>
+            <a href="/transcript.pdf" download="Richard-trans.pdf" className="p-2 w-full text-center rounded-2xl text-white px-2 py-1 bg-purple-500  hover:bg-purple-600 dark:bg-zinc-700 dark:hover:bg-zinc-600">Download Transcript &darr;</a>
             
 
 
