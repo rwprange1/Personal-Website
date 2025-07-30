@@ -34,13 +34,13 @@ function OfficeHours(){
                 <text>However I am available through email and can make appointments</text>
             </div>
   
-            <div className="grid grid-cols-6 mt-4 text-lg md:text-xl mb-4 text-neutral-600 dark:text-gray-300 border">
+            <div className="grid grid-cols-6 mt-4  text-xs md:text-xl mb-4 text-neutral-600 dark:text-gray-300 border ">
                 <div className="font-bold text-center border">
-                    <strong>Hours</strong>
+                    <strong className="text-clip">Hours</strong>
                     <Schedule list={schedule["Hours"]}/>
                 </div>
                 <div className="font-bold text-center border">
-                    <strong>Monday</strong>
+                    <strong className="text-clip">Monday</strong>
                     <Schedule list={schedule["Monday"]}/>
                 </div>
                 <div className="font-bold text-center border">
@@ -48,7 +48,7 @@ function OfficeHours(){
                     <Schedule list={schedule["Tuesday"]}/>
                 </div>
                 <div className="font-bold text-center border">
-                    <strong>Wednesday</strong>
+                    <strong className="text-clip">Wednesday</strong>
                     <Schedule list={schedule["Wednesday"]}/>
                 </div>
                 <div className="font-bold text-center border">

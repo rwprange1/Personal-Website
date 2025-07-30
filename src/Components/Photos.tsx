@@ -11,7 +11,7 @@ function Photos(){
     return(
     <>
         {/** Displays phtotos on medium screens */}
-        <div className="hidden md:flex relative h-108">
+        <div className="hidden lg:flex relative h-108">
             <div className="absolute left-1/2 transform -translate-x-1/2 w-[120%] flex gap-x-12 columns-5">
             <img src={grad} className="w-full h-auto  rounded-2xl rotate-355" />
             <img src={wf} className="w-full h-auto rounded-2xl rotate-8" />
@@ -22,7 +22,7 @@ function Photos(){
         </div>
 
         {/** Displays phtotos on mobile */}
-       <div className="flex-col md:hidden relative  mb-2">
+       <div className="flex-col lg:hidden relative  mb-2">
             <Carousel/>
         </div>
         

@@ -44,8 +44,8 @@ function About() {
 
             </div>
             <div className="flex flex-col text-neutral-600 dark:text-gray-500 text-xl sm:text-3xl mb-3 wrap-break-word w-full lg:w-1/2 p-5">
-                <div className="flex p-5 w-auto h-1/2">
-                    <img src={grad} className="rounded-2xl md:rotate-355" />
+                <div className="flex p-5 justify-center w-auto h-100">
+                    <img src={grad} className="rounded-2xl lg:rotate-355" />
                 </div>
 
 

@@ -34,7 +34,7 @@ export default function Header() {
   return (
     <nav>
       {/** Large to medium size screens */}
-    <div className="hidden md:flex flex-row items-center justify-between pt-4 pb-4">
+    <div className="hidden lg:flex flex-row items-center justify-between pt-4 pb-4">
        
 
        <NavLink to="/" className="rounded-full  bg-white text-teal-400 dark:bg-zinc-50 dark:text-white hover:outline-1/2 hover:outline-purple-400">
@@ -45,7 +45,7 @@ export default function Header() {
 
   {/* Center header */}
   <div className="grow flex justify-center mb-2">
-    <header className="flex min-w-xs justify-center bg-inherit border-1 border-gray-300 dark:border-none dark:bg-zinc-700 rounded-full  lg:w-1/2 w-4/10  text-sm xl:text-md text-neutral-600 dark:text-white">
+    <header className="flex min-w-xs justify-center  bg-inherit border-1 border-gray-300 dark:border-none dark:bg-zinc-700 rounded-full  xl:w-1/2 w-7/10  text-xs xl:text-md text-neutral-600 dark:text-white">
       <NavLink
         to="/about"
         className="relative p-3 cursor-pointer hover:text-purple-400  "
@@ -143,7 +143,7 @@ export default function Header() {
     </div>
 
     {/** Mobile*/}
-    <div className="md:hidden flex place-content-end py-2 space-x-3">
+    <div className="lg:hidden flex place-content-end py-2 space-x-3">
       <div className="flex space-x-0.5">
         <Menu as="div" className="relative inline-block text-left">
           <div>
@@ -159,9 +159,12 @@ export default function Header() {
           >
             <div className="py-1">
               <MenuItem>
-                 <NavLink to="/" className="rounded-full bg-white text-teal-400 dark:bg-zinc-50 dark:text-white hover:outline-1/2 hover:outline-purple-400">
-                    <img className="w-10 h-10 rounded-full" src="null" alt="avatar"/> 
-                  </NavLink>
+                 <NavLink
+                  to="/"
+                  className="rounded-md block px-4 py-1 text-sm text-white data-focus:bg-zinc-900"
+                >
+                  Home
+                </NavLink>
               </MenuItem>
 
               <MenuItem>

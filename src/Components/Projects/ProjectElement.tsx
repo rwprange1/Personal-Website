@@ -15,11 +15,11 @@ interface ProjectElementProps{
 function ProjectElement(props: ProjectElementProps){
 
     return(
-        <div className="items-center w-2/3 xl:w-1/3   h-[500px] flex flex-col  bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 overflow-y-scroll">
+        <div className="items-center w-full xl:w-1/3   h-[500px] flex flex-col  bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 overflow-y-scroll">
                 
                    
-                    <img className="rounded-t-lg h-[225px] w-full object-cover" src={props.data.img} alt="" />
-                
+                <img className="rounded-t-lg h-[225px] w-full object-cover" src={props.data.img} alt="" />
+            
                     
                     
             

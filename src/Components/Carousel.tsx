@@ -38,11 +38,11 @@ const Carousel: React.FC = () => {
 
   return (
     <div className="relative w-full max-w-2xl mx-auto min-w-[300px]">
-      <div className="overflow-hidden rounded-lg">
+      <div className="overflow-hidden rounded-lg flex items-center justify-center">
         <img
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
-          className=" w-full h-80 object-cover transition duration-500 ease-in-out"
+          className="object-cover object-center rounded-2xl h-100 transition duration-500 ease-in-out"
         />
       </div>
 
