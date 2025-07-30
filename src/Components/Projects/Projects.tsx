@@ -3,13 +3,13 @@ import ProjectElement from "./ProjectElement";
 import { BsChevronDoubleRight,BsChevronDoubleLeft } from "react-icons/bs";
 
 import chess from '../../assets/Chess.png';
-import bs from '../../assets/bs.png'
+import bs from '../../assets/bs.png';
 import wbf from '../../assets/wbf.png';
 import shell from '../../assets/rustacean-flat-happy.png'
 import bat from '../../assets/castle.jpg';
-import stat from '../../assets/push.gif'
+import stat from '../../assets/push.gif';
 import float from '../../assets/ballsv2g.gif';
-import gn from '../../assets/graph.png'
+import gn from '../../assets/graph.png';
 
 
 interface jsonObject{
