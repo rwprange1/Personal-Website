@@ -3,7 +3,7 @@ import ProjectElement from "./ProjectElement";
 import { BsChevronDoubleRight,BsChevronDoubleLeft } from "react-icons/bs";
 
 import chess from '../../assets/Chess.png';
-import bs from '../../assets/bs.png';
+import bs from '../../assets/Chess.png';
 import wbf from '../../assets/wbf.png';
 import shell from '../../assets/rustacean-flat-happy.png'
 import bat from '../../assets/castle.jpg';
