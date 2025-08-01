@@ -1,3 +1,5 @@
+import { useState } from "react";
+import {NavLink } from "react-router-dom";
 
 interface jsonObject{
     title: string,
@@ -13,6 +15,7 @@ interface ProjectElementProps{
 
 
 function ProjectElement(props: ProjectElementProps){
+    const [displaySum, setDis] = useState<boolean>(false);
 
     return(
         <div className="items-center w-full xl:w-1/3   h-[500px] flex flex-col  bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 overflow-y-scroll">
@@ -33,10 +36,10 @@ function ProjectElement(props: ProjectElementProps){
                          {props.data.desc}      
                         </p>
                     </div>
-                    <a href={props.data.link} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-purple-400 rounded-lg hover:bg-purple-500 focus:ring-4 focus:outline-none focus:ring-purple-400">
+                    <NavLink to={props.data.link} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-purple-400 rounded-lg hover:bg-purple-500 focus:ring-4 focus:outline-none focus:ring-purple-400">
                         Read more
                         &rarr;
-                    </a>
+                    </NavLink>
                 </div>
             </div>
     )

@@ -37,7 +37,7 @@ function Projects(){
         "title": "Java Chess Application",
         "desc": "A 2 and 4 player implementation of Chess utilizing JavaFX to provide users with the ability to play " +
         "on the command line or through a graphical interface",
-        "link": "",
+        "link": "projects/chess",
    
     },
     {
@@ -73,14 +73,14 @@ function Projects(){
     },
      {
         "img": float,
-        "title": "C++ Balls :)",
+        "title": "C++ Moving Collisions",
         "desc": "A simple C++ and SFML program which spawns balls and launches them then detects and corrects collisions (frictionless)",
         "link": "",
 
     },
      {
         "img": stat,
-        "title": "C++ Balls :)",
+        "title": "C++ Static Collisions",
         "desc": "A simple C++ and SFML program which spawns static moveable then detects and corrects collisions",
         "link": "",
 
