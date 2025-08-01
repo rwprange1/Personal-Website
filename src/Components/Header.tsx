@@ -115,19 +115,7 @@ export default function Header() {
         )}
       </NavLink>
 
-      <NavLink to="/games" className=" relative p-3 cursor-pointer hover:text-purple-400"
       
-      >
-        {({ isActive }) => (
-          <span className="relative inline-block">
-            Games
-
-            {isActive && (
-              <span className="absolute left-1/2 -translate-x-1/2 -bottom-2.5 h-0.5 w-12 bg-linear-to-r from-purple-500/0 via-purple-500/60 to-purple-500/0 dark:from-purple-400/0 dark:via-purple-400/60 dark:to-purple-400/0"></span>
-            )}
-          </span>
-        )}
-      </NavLink>
     </header>
     </div>
       {/* Right button with margin from wall */}
@@ -210,14 +198,7 @@ export default function Header() {
                 </NavLink>
               </MenuItem>
 
-              <MenuItem>
-                <NavLink
-                  to="/hours"
-                  className="rounded-md block px-4 py-1 text-sm text-white data-focus:bg-zinc-900"
-                >
-                  Games
-                </NavLink>
-              </MenuItem>
+              
                 
             </div>
           </MenuItems>

@@ -37,7 +37,7 @@ function Projects(){
         "title": "Java Chess Application",
         "desc": "A 2 and 4 player implementation of Chess utilizing JavaFX to provide users with the ability to play " +
         "on the command line or through a graphical interface",
-        "link": "projects/chess",
+        "link": "chess",
    
     },
     {
