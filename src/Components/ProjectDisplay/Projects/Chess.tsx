@@ -1,4 +1,4 @@
-import chess from '../../assets/Chess.png';
+import chess from '../../../assets/Chess.png';
 
 export default function Chess(){
     return(

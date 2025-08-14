@@ -3,11 +3,11 @@ import  Layout  from './Components/Sections/Layout.tsx';
 import Home from './Components/Sections/Home.tsx';
 import About from "./Components/Sections/About.tsx";
 import Research from './Components/Sections/Research.tsx';
-import Projects from './Components/Projects/Projects.tsx';
+import ProjectContainer from './Components/ProjectDisplay/ProjectContainer.tsx';
 import Contact from './Components/Sections/Contact.tsx'
 import OfficeHours from './Components/Sections/OfficeHours.tsx'
-import Chess from '../src/Components/Projects/Chess.tsx';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 
 
 
@@ -22,10 +22,23 @@ function App() {
                     <Route index element={<Home />} />
                     <Route path="about" element={<About/>}/>
                     <Route path="research" element={<Research/>}/>
-                    <Route path="projects" element={<Projects/>}/>
-                    <Route path="projects/chess" element={<Chess/>}/>
+                    <Route path="projects" element={<ProjectContainer/>}>
+                        
+                    </Route>
+                    
                     <Route path="contact" element={<Contact/>}/>
                     <Route path="hours" element={<OfficeHours/>}/>
+                    <Route path="*" element={<>
+                        <div>
+                            <NavLink className="bg-amber-600"
+                                to="/"
+                            
+                            >Path not found :( Click Me!</NavLink>
+                           
+
+                        </div>
+                        
+                        </>}/>
               </Route>
           </Routes>
       </Router>

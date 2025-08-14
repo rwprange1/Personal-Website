@@ -15,12 +15,15 @@ import gn from '../../assets/graph.png';
 interface jsonObject{
     title: string,
     desc: string,
-    link: string,
     img: string,
 }
 
+interface ProjectProps{
+  onClick: (s: string) => void;
+}
 
-function Projects(){
+
+function Projects( props: ProjectProps){
     const CHESS: number = 0;
     const BATTLE_SHIP : number = 1;
     const WHEE_B_FIT : number = 2;
@@ -37,7 +40,7 @@ function Projects(){
         "title": "Java Chess Application",
         "desc": "A 2 and 4 player implementation of Chess utilizing JavaFX to provide users with the ability to play " +
         "on the command line or through a graphical interface",
-        "link": "chess",
+       
    
     },
     {
@@ -45,7 +48,7 @@ function Projects(){
         "title": "Rust N-Player BattleShip",
         "desc": "A N-Player BattleShip game, which utilizes threads and shared memory to allow N-players to connect to " + 
         "a server and continously send and recieve data (art from: https://www.pixilart.com/art/battle-burdened-battle-hardened-sr2095a57b5ecaws3?ft=tags&ft_id=)",
-        "link": "",
+
 
     },
     {
@@ -53,44 +56,41 @@ function Projects(){
         "title": "WheeBFit a Full Stack Web Application",
         "desc": "An educational fitness and nutrition app for educators and students. Developed in TypeScript, utilizing " +
         "Express, React, and Tailwind. Containerized using Docker and deployed on Heroku",
-        "link": "",
+
  
     },
     {
         "img": shell,
         "title": "A Rusty Shell",
         "desc": "In immitation of a unix-shell built in rust utilizing syscalls",
-        "link": "",
-
+      
     },
     {
         "img": bat,
         "title": "Rust Bastions",
         "desc": "A rust programs which models a central command sending and recieving resources from 3 outposts(bastions) " +
         "this program utilizes threading and shared memory to produce, distribute, and transport goods between command and bastions",
-        "link": "",
+
 
     },
      {
         "img": float,
         "title": "C++ Moving Collisions",
         "desc": "A simple C++ and SFML program which spawns balls and launches them then detects and corrects collisions (frictionless)",
-        "link": "",
+
 
     },
      {
         "img": stat,
         "title": "C++ Static Collisions",
         "desc": "A simple C++ and SFML program which spawns static moveable then detects and corrects collisions",
-        "link": "",
+  
 
     },
-     {
-        "img": gn,
-        "title": "Java Graph Analyzer",
-        "desc": "A Java application which allows a user to traverse a graph",
-        "link": "",
-
+    {
+      "img": gn,
+      "title": "Java Graph Analyzer",
+      "desc": "A Java application which allows a user to traverse a graph",
     },
     
 
@@ -128,26 +128,26 @@ function Projects(){
 
             <div className="flex space-x-10 columns-3 mb-5">
                 {/** Chess */}
-                <ProjectElement data={obj[CHESS]}/>
+                <ProjectElement onClick={props.onClick} data={obj[CHESS]}/>
                 {/** BattleShip */}
-                <ProjectElement data={obj[BATTLE_SHIP]} />
+                <ProjectElement  onClick={props.onClick} data={obj[BATTLE_SHIP]} />
                 {/** WheeBFit */}
-                <ProjectElement data={obj[WHEE_B_FIT]} />
+                <ProjectElement   onClick={props.onClick} data={obj[WHEE_B_FIT]} />
             </div>
             <div className="flex space-x-10 justify-center mb-5">
                 {/** Rusty Shell */}
-                <ProjectElement data={obj[RUSTY_SHELL]} />
+                <ProjectElement  onClick={props.onClick} data={obj[RUSTY_SHELL]} />
                 {/** Rusty Bastion */}
-                <ProjectElement data={obj[BASTIONS]} />
+                <ProjectElement  onClick={props.onClick} data={obj[BASTIONS]} />
             </div>
 
             <div className="flex space-x-10 columns-3 mb-5">
                 {/** C++ Balls */}
-                <ProjectElement data={obj[BALLS_LAUNCH]}/>
+                <ProjectElement  onClick={props.onClick} data={obj[BALLS_LAUNCH]}/>
                 {/** C++ Balls */}
-                <ProjectElement data={obj[BALLS_STATIC]} />
+                <ProjectElement  onClick={props.onClick} data={obj[BALLS_STATIC]} />
                 {/** GANAL */}
-                <ProjectElement data={obj[GANAL]} />
+                <ProjectElement  onClick={props.onClick} data={obj[GANAL]} />
             </div>
 
             
@@ -159,7 +159,7 @@ function Projects(){
                 <text> Featured Projects  </text>
             </h1>
                   <div className="flex justify-center overflow-hidden rounded-lg">
-                    <ProjectElement data={obj[currentIndex]} />
+                    <ProjectElement onClick={props.onClick} data={obj[currentIndex]} />
                   </div>
             
                   <div className='flex-row -translate-y-40'>
