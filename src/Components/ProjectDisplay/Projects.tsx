@@ -120,13 +120,13 @@ function Projects( props: ProjectProps){
 
     return(
         <>
-        <div className='hidden xl:block' >
+        <div className='hidden xl:block ' >
 
             <h1 className='rounded-full  justify-center  flex space-x-3 text-4xl mb-5 text-gray-500 '>
                 <text> Featured Projects  </text>
             </h1>
 
-            <div className="flex space-x-10 columns-3 mb-5">
+            <div className="flex space-x-10 columns-3 mb-5 justify-center">
                 {/** Chess */}
                 <ProjectElement onClick={props.onClick} data={obj[CHESS]}/>
                 {/** BattleShip */}
@@ -141,7 +141,7 @@ function Projects( props: ProjectProps){
                 <ProjectElement  onClick={props.onClick} data={obj[BASTIONS]} />
             </div>
 
-            <div className="flex space-x-10 columns-3 mb-5">
+            <div className="flex space-x-10  justify-center columns-3 mb-5">
                 {/** C++ Balls */}
                 <ProjectElement  onClick={props.onClick} data={obj[BALLS_LAUNCH]}/>
                 {/** C++ Balls */}
