@@ -1,5 +1,5 @@
 import { FaTools } from "react-icons/fa";
-import { GiBookmarklet } from "react-icons/gi";
+import { GiBookmarklet } from "react-icons/gi"; 
 
 import wcu from '../../assets/wcu.webp';
 import clt from '../../assets/clt.png'
@@ -15,25 +15,34 @@ function Work(){
                 <FaTools size="1.2em" />                   
             </h1>
 
-            <div className="pt-5 p-1  ">
-                <div className="rounded-full flex space-x-2 pb-2">
-                    <img className="w-10 h-10 rounded-full" src={gran} alt="gran"/> 
-                    <text className="px-3 py-1.5"> Quality and Technical Intern </text>
-                </div> 
-                <div className="  rounded-full flex space-x-2  pb-2">
-                    <img className="w-10 h-10 rounded-full" src={wcu} alt="gran"/> 
-                    <text className="px-3 py-1.5"> Mathematics and Computer Science Tutor </text>
-                </div>
-            
-                <div className="  rounded-full flex space-x-2  pb-2">
-                    <img className="w-10 h-10 rounded-full" src={clt} alt="gran"/> 
-                    <text className="px-3 py-1.5"> Graduate Assistant </text>
-                </div>
-
+            <div className="pt-5 p-1  mb-2">
+               <ul role="list">     
+                    <li className="flex py-4 first:pt-0 last:pb-0">      
+                        <img className="h-10 w-10 rounded-full" src={gran} alt="" />      
+                        <div className="ml-3 overflow-hidden">        
+                            <p className="text-md md:text-lg font-medium text-gray-900 dark:text-white">Quality and Technical Intern</p>        
+                            <p className="truncate text-sm md:text-md text-gray-500 dark:text-gray-400">Granges Americas, Salisbury, N.C.</p>      
+                        </div>    
+                    </li>  
+                    <li className="flex py-4 first:pt-0 last:pb-0">      
+                        <img className="h-10 w-10 rounded-full" src={wcu} alt="" />      
+                        <div className="ml-3 overflow-hidden">        
+                            <p className="text-md md:text-lg text-gray-900 dark:text-white"> Mathematics and Computer Science Tutor</p>        
+                            <p className="truncate text-sm md:text-md text-gray-500 dark:text-gray-400">Western Carolina University, Cullowhee, N.C.</p>      
+                        </div>    
+                    </li>  
+                    <li className="flex py-4 first:pt-0 last:pb-0">      
+                        <img className="h-10 w-10 rounded-full" src={clt} alt="" />      
+                        <div className="ml-3 overflow-hidden">        
+                            <p className="text-md md:text-lgfont-medium text-gray-900 dark:text-white">Graduate Assistant</p>        
+                            <p className="truncate text-sm md:text-md text-gray-500 dark:text-gray-400">University of North Carolina at Charlotte, Charlotte, N.C.</p>      
+                        </div>    
+                    </li>  
+                </ul>
 
             </div>
 
-          <a href="/res.pdf" download="Richard-Resume.pdf" className=" w-full text-center rounded-2xl px-2 py-1 text-white bg-purple-500  hover:bg-purple-600  dark:bg-zinc-700 dark:hover:bg-zinc-600">Download Resume &darr;</a>
+          <a href="/res.pdf" download="Richard-Resume.pdf" className=" w-full text-center rounded-2xl px-2 py-1 text-white bg-purple-500  hover:bg-purple-600">Download Resume &darr;</a>
             
             <hr className="mt-4 w-full outline-1 outline-gray-300 dark:outline-zinc-700 dark:outline-2"></hr>
 
@@ -45,21 +54,28 @@ function Work(){
                                       
             </h1>
 
-            <div className="pt-5 p-1 border-spacing-y-2  ">
-                <div className="rounded-full flex space-x-2 pb-2">
-                    <img className="w-10 h-10 rounded-full" src={wcu} alt="gran"/> 
-                    <text className="px-3 py-1.5"> B.S Traditional Mathematics </text>
-                </div> 
-                <div className="  rounded-full flex space-x-2  pb-2">
-                    <img className="w-10 h-10 rounded-full" src={wcu} alt="gran"/> 
-                    <text className="px-3 py-1.5"> B.S Computer Science</text>
-                </div>
-            
-                
-
-
+            <div className="pt-5 p-1 border-spacing-y-2  mb-2 ">
+                <ul role="list">     
+                    <li className="flex py-4 first:pt-0 last:pb-0">      
+                        <img className="h-10 w-10 rounded-full" src={wcu} alt="" />      
+                        <div className="ml-3 overflow-hidden">        
+                            <p className="text-md md:text-lg font-medium text-gray-900 dark:text-white"> B.S. Traditional Mathematics</p>        
+                            <p className="truncate text-sm md:text-md text-gray-500 dark:text-gray-400">Western Carolina University, Cullowhee, N.C.</p>      
+                        </div>    
+                    </li>  
+                    <li className="flex py-4 first:pt-0 last:pb-0">      
+                        <img className="h-10 w-10 rounded-full" src={wcu} alt="" />      
+                        <div className="ml-3 overflow-hidden">        
+                            <p className="text-md md:text-lg font-medium text-gray-900 dark:text-white"> B.S. Computer Science</p>        
+                            <p className="truncate text-sm md:text-md text-gray-500 dark:text-gray-400">Western Carolina University, Cullowhee, N.C.</p>      
+                        </div>    
+                    </li>  
+                </ul>
             </div>
-            <a href="/transcript.pdf" download="Richard-trans.pdf" className="p-2 w-full text-center rounded-2xl text-white px-2 py-1 bg-purple-500  hover:bg-purple-600 dark:bg-zinc-700 dark:hover:bg-zinc-600">Download Transcript &darr;</a>
+
+            
+
+            <a href="/transcript.pdf" download="Richard-trans.pdf" className="p-2 w-full text-center rounded-2xl text-white px-2 py-1 bg-purple-500  hover:bg-purple-600">Download Transcript &darr;</a>
             
 
 
