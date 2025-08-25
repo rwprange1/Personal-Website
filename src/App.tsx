@@ -5,7 +5,7 @@ import About from "./Components/Sections/About.tsx";
 import Research from './Components/Sections/Research.tsx';
 import ProjectContainer from './Components/ProjectDisplay/ProjectContainer.tsx';
 import Contact from './Components/Sections/Contact.tsx'
-import OfficeHours from './Components/Sections/OfficeHours.tsx'
+
 
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 
@@ -27,7 +27,6 @@ function App() {
                     </Route>
                     
                     <Route path="contact" element={<Contact/>}/>
-                    <Route path="hours" element={<OfficeHours/>}/>
                     <Route path="*" element={<>
                         <div>
                             <NavLink className="bg-amber-600"
