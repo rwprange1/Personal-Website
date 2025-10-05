@@ -14,7 +14,7 @@ function Home(){
       </h1>
 
       <h2 className="text-gray-500 text-xl sm:text-2xl">
-        I'm Richard, a software engineer and Mathematician at ... I graduated undergrad with a Mathematics and Computer Science degree.
+        I'm Richard, a Graduate Student at UNC Charlotte. I graduated from Western Carolina University with degrees in Mathematics and Computer Science.
         I am a part time game developer, and I enjoy to cook, play games, and hike.
       </h2>
 
