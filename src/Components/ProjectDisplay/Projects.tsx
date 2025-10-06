@@ -62,7 +62,7 @@ function Projects( props: ProjectProps){
     {
         "img": shell,
         "title": "A Rusty Shell",
-        "desc": "In immitation of a unix-shell built in rust utilizing syscalls",
+        "desc": "An immitation of a unix-shell built in rust utilizing syscalls",
       
     },
     {
