@@ -2,6 +2,14 @@ import React, { JSX } from "react";
 import Chess from "./Projects/Chess";
 import BattleShip from "./Projects/BattleShip";
 import WheeBFit from "./Projects/WheeBFit";
+import DynamicCol from "./Projects/DynamicCol";
+import StaticCol from "./Projects/StaticCol";
+import Shell from "./Projects/RustShell";
+import Bastions from "./Projects/RustBastions";
+import JavaGA from "./Projects/JavaGA";
+
+
+
 import { MdMenuOpen } from "react-icons/md";
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 
@@ -14,14 +22,22 @@ interface MyDictionary {
       [key: string]: () => JSX.Element; // Defines a dictionary where keys are strings and values are numbers
 }
 
-const names: string[] = ["Java Chess Application", "Rust N-Player BattleShip", "WheeBFit a Full Stack Web Application"];
+
 
 
 const componentsMap: MyDictionary = {
     "Java Chess Application": Chess,
     "Rust N-Player BattleShip": BattleShip,
     "WheeBFit a Full Stack Web Application": WheeBFit,
-}
+    "A Rusty Shell": Shell,
+    "Rust Bastions": Bastions,
+    "C++ Moving Collisions": DynamicCol,
+    "C++ Static Collisions": StaticCol,
+    "Java Graph Analyzer": JavaGA
+
+};
+
+const names: string[] = ["Java Chess Application", "Rust N-Player BattleShip", "WheeBFit a Full Stack Web Application", "A Rusty Shell", "Rust Bastions", "C++ Moving Collisions", "C++ Static Collisions", "Java Graph Analyzer"];
 
 
 export default function SideBar(props: SideBarProps){

@@ -1,10 +1,10 @@
-import chess from '../../../assets/Chess.png';
-import fourPC from '../../../assets/4pc.png';
+import wbf1 from '../../../assets/wbf1 (1).png';
+import wbf2 from '../../../assets/wbf1 (2).png';
 import { GoArrowUpRight } from "react-icons/go";
 
 export default function WheeBFit(){
     return(
-        <div className='text-neutral-600 dark:text-gray-400 text-lg lg:text-3xl space-y-10'>
+        <div className='text-neutral-600 dark:text-gray-400 text-lg lg:text-3xl space-y-10 m-2'>
             
             <h1 className='dark:text-white mb-2'> WheeBFit</h1>
             <p className='mb-7'>
@@ -13,31 +13,31 @@ export default function WheeBFit(){
 
             </p>
             <div className='mb-7'>
-                <img className="rounded-t-lg  object-contain" src={chess} alt="" />
-                <text className='self-center text-sm'>A two player game of Chess in ChessMeister</text>
+                <img className="rounded-lg  object-contain" src={wbf1} alt="" />
+                <text className='self-center text-sm'>A student account which has logs for 2 days</text>
             </div>
             
             
-            <p className='mb-3'>The main focus of this project was the core functionality of two player chess. 
-                In sprints one and two were able to fully implement check, checkmate, en-passaunt, castling
-                through the command line interface. 
+            <p className='mb-5'>The front end was built using TypeScript, ReactJS and TailwindCSS. It was built for a client. The user interface was reimplemented in React but the 
+                original design came from the original iOS version of the application. 
                 <br className='mb-3'/>
-                We were also able to fully implement a version of four-player chess with two modes anihiliate and assimilate.
-                There is no check or checkmates in this version as to win you need to capture your opponents king.
+                The backend is built on ExpressJS and MySQL and is hosted on Heroku in a Docker container. We designed, implemented and tested custom application programming interfaces (API)  which 
+                allows the frontend to preform a wide range of CRUD operations. 
             </p>
 
              <div className='mb-7'>
-                <img className="rounded-t-lg  object-contain" src={fourPC} alt="" />
-                <text className='self-center text-sm'>A four player game of Chess in ChessMeister</text>
+                <img className="rounded-lg  object-contain" src={wbf2} alt="" />
+                <text className='self-center text-sm'>A simple teacher account, with a single class and one student in that class</text>
             </div>
 
 
             <p>
-                If you would like to visit and view the source code for this project it can be found on GitFront.io
-                <br/>
                 
-                <button className='flex cursor-grab hover:bg-zinc-800 rounded-2xl p-2'>
-                    <text> View Source  </text>
+                
+                <button className='flex cursor-grab hover:bg-zinc-800 rounded-2xl p-2' onClick={()=> {
+                    window.location.href = "https://www.wheebfit.com"
+                }}>
+                    <text> View WheeBFit.com  </text>
                     <GoArrowUpRight/>
                 </button>
             </p>

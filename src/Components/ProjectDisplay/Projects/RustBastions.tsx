@@ -2,7 +2,7 @@ import bs1 from '../../../assets/battleship (1).png';
 import bs2 from '../../../assets/battleship (2).png';
 import { GoArrowUpRight } from "react-icons/go";
 
-export default function BattleShip(){
+export default function Bastions(){
     return(
         <div className='text-neutral-600 dark:text-gray-400 text-lg lg:text-3xl space-y-10'>
             

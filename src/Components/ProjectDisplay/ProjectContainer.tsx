@@ -9,6 +9,7 @@ export default function ProjectContainer(){
     const [project, setProject] = useState<string>("");
     
     const changeProject = (name:string) =>{
+        console.log(project, name);
        setProject(name);
     }
     

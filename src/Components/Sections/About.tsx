@@ -18,19 +18,19 @@ function About() {
 
                 <text className="p-5">
                     I've always enjoyed understanding how things work, however I was never a big tinkerer as I was afraid of breaking things. 
-                    This changed in college when all of my peers were into computer science and pc building.
+                    This changed in college when all of my peers were into computer science and building computers.
                 </text>
 
                 <text className="p-5">
                     In college I spent a majority of my time programming and learning that every statement in mathematics needs to be proved.
-                    Many of my projects will be linked in the 'Projects' tab of the webpage and I hope that youll be able to see my progression as a software developer and engineer.
+                    Many of my projects will be linked in the 'Projects' tab of the webpage and I hope that you'll be able to see my progression as a software developer and engineer.
                     I also spent my senior year doing research in Ramsey Theory which can be found in the 'Research' tab.
                 </text>
 
                 <text className="p-5">
                     My favorite languages would have to be C++ and Rust, if you don't believe me take a quick look at the afromentioned 'Projects' tab and come back. 
                     I like the low level control and the feeling of optimization and speed (not to claim that my programs are the fastest or well optimized). 
-                    I've also taking a liking to web-development, this passion came through my senior year capstone where me and my teamates built, containerized and deployed a full stack web application for a client (shout out to Tailwind as I HATE CSS). 
+                    I've also taken a liking to web-development, this passion came through my senior year capstone where me and my teamates built, containerized and deployed a full stack web application for a client (shoutout to TailwindCSS). 
                 </text>
 
                 <text className="p-5">
