@@ -7,7 +7,7 @@ export default function JavaGA(){
     return(
         <div className='text-neutral-600 dark:text-gray-400 text-lg lg:text-3xl space-y-10'>
             
-            <h1 className='dark:text-white mb-2'> Rusty-BattleShip</h1>
+            <h1 className='dark:text-white mb-2'> Java Graph Analyzer</h1>
             <p className='mb-7'>
                 Created my first semester of my third year in my DSA class, this project implements DFS, BFS, Cycle Detection, Transitive Closure in Java
 
