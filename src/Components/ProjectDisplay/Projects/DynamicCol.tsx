@@ -31,11 +31,10 @@ export default function DynamicCol(){
 
 
             <p>
-                If you would like to visit and view the source code for this project it can be found on GitFront.io
-                <br/>
-                
-                <button className='flex cursor-grab hover:bg-zinc-800 rounded-2xl p-2'>
-                    <text> View Source  </text>
+                <button className='flex cursor-grab hover:bg-zinc-800 rounded-2xl p-2' onClick={()=> {
+                    window.location.href = "https://github.com/rwprange1/CppFrictionlessBallCollisions"
+                }}>
+                    <text> View Repository  </text>
                     <GoArrowUpRight/>
                 </button>
             </p>

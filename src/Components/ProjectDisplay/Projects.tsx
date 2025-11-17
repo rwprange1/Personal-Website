@@ -30,8 +30,7 @@ function Projects( props: ProjectProps){
     const RUSTY_SHELL: number = 3;
     const BASTIONS : number = 4;
     const BALLS_LAUNCH : number = 5;
-    const BALLS_STATIC : number = 6;
-    const GANAL: number = 7;
+    const GANAL: number = 6;
     const obj: jsonObject[] = [
     
    
@@ -80,13 +79,7 @@ function Projects( props: ProjectProps){
 
 
     },
-     {
-        "img": stat,
-        "title": "C++ Static Collisions",
-        "desc": "A simple C++ and SFML program which spawns static moveable then detects and corrects collisions",
-  
-
-    },
+     
     {
       "img": gn,
       "title": "Java Graph Analyzer",
@@ -144,8 +137,7 @@ function Projects( props: ProjectProps){
             <div className="flex space-x-10  justify-center columns-3 mb-5">
                 {/** C++ Balls */}
                 <ProjectElement  onClick={props.onClick} data={obj[BALLS_LAUNCH]}/>
-                {/** C++ Balls */}
-                <ProjectElement  onClick={props.onClick} data={obj[BALLS_STATIC]} />
+               
                 {/** GANAL */}
                 <ProjectElement  onClick={props.onClick} data={obj[GANAL]} />
             </div>
