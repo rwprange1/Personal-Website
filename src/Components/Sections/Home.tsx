@@ -30,7 +30,7 @@ function Home(){
 
 
       <Photos/>
-      <br className="m-5"></br>
+      <br   className="mb-6"></br>
       <Skills/>
 
 
