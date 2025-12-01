@@ -10,7 +10,7 @@ function Skills(){
 
 
     return(
-        <div className="rounded-2xl  content-center text-neutral-600 dark:text-white">
+        <div className="rounded-2xl  mt-10 content-center text-neutral-600 dark:text-white">
             <h1 className='rounded-full text-3xl  justify-center  flex space-x-3 md:text-4xl dark:text-gray-300 '>
                 <text> Skills  </text>
             </h1>
