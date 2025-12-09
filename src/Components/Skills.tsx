@@ -106,7 +106,7 @@ function Skills(){
                     <li>
                         <div className="rounded-full flex space-x-2 pb-2">
                             <DiMysql/>
-                            <text> SQL</text>
+                            <text> MySQL</text>
 
                         </div>
                         
