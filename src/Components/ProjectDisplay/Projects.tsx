@@ -7,16 +7,12 @@ import bs from '../../assets/ship.png';
 import wbf from '../../assets/wbf.png';
 import shell from '../../assets/rustacean-flat-happy.png'
 import bat from '../../assets/castle.jpg';
-import stat from '../../assets/push.gif';
+
 import float from '../../assets/ballsv2g.gif';
 import gn from '../../assets/graph.png';
 
 
-interface jsonObject{
-    title: string,
-    desc: string,
-    img: string,
-}
+
 
 interface ProjectProps{
   onClick: (s: string) => void;
@@ -31,7 +27,7 @@ function Projects( props: ProjectProps){
     const BASTIONS : number = 4;
     const BALLS_LAUNCH : number = 5;
     const GANAL: number = 6;
-    const obj: jsonObject[] = [
+    const obj: projectObject[] = [
     
    
     {

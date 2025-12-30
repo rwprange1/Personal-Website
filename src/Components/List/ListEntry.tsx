@@ -1,17 +1,12 @@
 
 import { PiLineVertical } from "react-icons/pi";
 
-interface jsonObject{
-    date: String,
-    title: String,
-    desc:String,
-    link:string
-};
 
 
 
 
-function ListEntry( props: jsonObject){
+
+function ListEntry( props: researchObject){
 
     return(
 
@@ -22,12 +17,12 @@ function ListEntry( props: jsonObject){
                 <text className="text-lg"> {props.date}</text>
             </div>
 
-            <h1 className="p-2 text-black dark:text-white text-lg md:text-2xl">
-                {props.title}
+            <h1 className="p-2 text-black dark:text-white text-lg md:text-2xl" >
+              {props.title}
             </h1>
             
 
-            <h1 className="p-2 text-gray-500  text-lg md:text-xl">{props.desc}</h1>
+            <h1 className="p-2 text-gray-500  text-lg md:text-xl" dangerouslySetInnerHTML={{__html: props.desc}}/>
 
             <a className="p-2 text-purple-500 dark:text-purple-400 text-lg md:text-xl" href={props.link} target="_blank">View article</a>
             

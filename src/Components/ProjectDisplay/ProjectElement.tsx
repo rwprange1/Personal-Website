@@ -1,13 +1,9 @@
 
-interface jsonObject{
-    title: string,
-    desc: string,
-    img: string,
-}
+
 
 
 interface ProjectElementProps{
-    data: jsonObject,
+    data:   projectObject,
     onClick: (s:string) => void, 
 };
 

@@ -9,6 +9,9 @@ function Home(){
   
   return (
     <div className="h-auto">
+
+
+
       <h1 className="dark:text-white text-2xl sm:text-4xl mb-3">
         Mathematician, Computer Scientist, Mountain Lover
       </h1>
