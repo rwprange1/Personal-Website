@@ -1,4 +1,4 @@
-import React, { JSX } from "react";
+import React, { JSX, useEffect, useState } from "react";
 import Chess from "./Projects/Chess";
 import BattleShip from "./Projects/BattleShip";
 import WheeBFit from "./Projects/WheeBFit";
@@ -8,6 +8,7 @@ import Shell from "./Projects/RustShell";
 import Bastions from "./Projects/RustBastions";
 import JavaGA from "./Projects/JavaGA";
 
+import Teapot from "./Projects/Teapot/Teapot";
 
 
 import { MdMenuOpen } from "react-icons/md";
@@ -18,29 +19,47 @@ interface SideBarProps{
     onClick: (s: string) => void,
 }
 
-interface MyDictionary {
-      [key: string]: () => JSX.Element; // Defines a dictionary where keys are strings and values are numbers
-}
 
 
 
 
-const componentsMap: MyDictionary = {
-    "Java Chess Application": Chess,
-    "Rust N-Player BattleShip": BattleShip,
-    "WheeBFit a Full Stack Web Application": WheeBFit,
-    "A Rusty Shell": Shell,
-    "Rust Bastions": Bastions,
-    "C++ Moving Collisions": DynamicCol,
 
-    "Java Graph Analyzer": JavaGA
 
-};
 
-const names: string[] = ["Java Chess Application", "Rust N-Player BattleShip", "WheeBFit a Full Stack Web Application", "A Rusty Shell", "Rust Bastions", "C++ Moving Collisions",  "Java Graph Analyzer"];
+const names: string[] = ["Java Chess Application", "Rust N-Player BattleShip", "WheeBFit a Full Stack Web Application", "A Rusty Shell", "Rust Bastions", "C++ Moving Collisions",  "Java Graph Analyzer", "Im a little Teapot short and stout" ];
 
 
 export default function SideBar(props: SideBarProps){
+    
+
+
+
+    function getComponent(name: string){
+        switch (name) {
+            case names[0]:
+                return Chess;
+            case names[1]:
+                return BattleShip;
+            case names[2]:
+                return WheeBFit;
+            case names[3]:
+                return Shell;
+            case names[4]:
+                return DynamicCol;
+            case names[5]:
+                return Bastions;
+            case names[6]:
+                return JavaGA;
+            case names[7]:
+                return Teapot;                    
+
+        }
+        console.log(name)
+        return Chess
+    }
+    
+
+
 
     return(
         <div>
@@ -96,7 +115,7 @@ export default function SideBar(props: SideBarProps){
                 </aside>
             <div className="w-4/5 bg-white dark:bg-zinc-900 shadow-md border-gray-200 dark:border-gray-600 rounded-lg p-4">
                 {names.map(x => (
-                x === props.toDisplay ? React.createElement(componentsMap[props.toDisplay]) : <></>
+                x === props.toDisplay ? React.createElement(getComponent(props.toDisplay)) : <></>
             ))}
             </div> 
             </div>

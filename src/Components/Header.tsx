@@ -45,7 +45,7 @@ export default function Header() {
 
   {/* Center header */}
   <div className="grow flex justify-center mb-2">
-    <header className="flex min-w-xs justify-around  bg-inherit border-1 border-gray-300 dark:border-none dark:bg-zinc-700 rounded-full  xl:w-1/4 w-1/3  text-xs xl:text-md text-neutral-600 dark:text-white">
+    <header className="flex min-w-xs justify-around  bg-inherit border-1 border-gray-300 dark:border-none dark:bg-zinc-700 rounded-full  xl:w-1/4 w-1/3  text-xs xl:text-md text-neutral-600 dark:text-white items-center">
       <NavLink
         to="/about"
         className="relative p-3 cursor-pointer hover:text-purple-400  "

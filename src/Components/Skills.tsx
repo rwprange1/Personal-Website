@@ -5,7 +5,7 @@ import { SiTypescript,SiMongodb, SiExpress, SiLatex } from "react-icons/si";
 import { IoLogoGithub } from "react-icons/io";
 import { DiMysql } from "react-icons/di";
 import { FcLinux } from "react-icons/fc";
-
+import { BiLogoSpringBoot } from "react-icons/bi";
 function Skills(){
 
 
@@ -21,42 +21,42 @@ function Skills(){
                     <strong className="self-center text-xl md:text-3xl p-2 dark:text-gray-500"> Languages</strong> 
                     <ul className="self-center space-y-1 list-inside  ">
                         <li>
-                        <div className="rounded-full flex space-x-2 pb-2">
+                        <div className="rounded-full flex space-x-2 pb-2 items-center">
                                 <FaJava />
                                 <text> Java</text>
 
                             </div>
                         </li>
                         <li>
-                        <div className="rounded-full flex space-x-2 pb-2">
+                        <div className="rounded-full flex space-x-2 pb-2 items-center">
                                 <SiTypescript />
                                 <text> TypeScript</text>
 
                             </div>
                         </li>
                         <li>
-                            <div className="rounded-full flex space-x-2 pb-2">
+                            <div className="rounded-full flex space-x-2 pb-2 items-center">
                                 <FaRust />
                                 <text> Rust</text>
 
                             </div>
                         </li>
                         <li>
-                        <div className="rounded-full flex space-x-2 pb-2">
+                        <div className="rounded-full flex space-x-2 pb-2 items-center">
                                 <BiLogoCPlusPlus />
                                 <text> C++</text>
 
                             </div>
                         </li>
                         <li>
-                            <div className="rounded-full flex space-x-2 pb-2">
+                            <div className="rounded-full flex space-x-2 pb-2 items-center">
                                 <FaPython />
                                 <text> Python</text>
 
                             </div>
                         </li>
                         <li>
-                            <div className="rounded-full flex space-x-2 pb-2">
+                            <div className="rounded-full flex space-x-2 pb-2 items-center">
                                 <FaHtml5 />
                                 <text> HTML/CSS</text>
 
@@ -69,29 +69,35 @@ function Skills(){
                     <strong className="self-center text-xl md:text-3xl text-gray-500 p-2"> Frameworks</strong> 
                     <ul className="self-center space-y-1 list-inside  ">
                         <li>
-                        <div className="rounded-full flex space-x-2 pb-2">
+                        <div className="rounded-full flex space-x-2 pb-2 items-center">
                                 <FaReact />
                                 <text> React</text>
 
                             </div>
                         </li>
                         <li>
-                            <div className="rounded-full flex space-x-2 pb-2">
+                            <div className="rounded-full flex space-x-2 pb-2 items-center">
                                 <FaNodeJs />
                                 <text> NodeJS</text>
 
                             </div>
                         </li>
                         <li>
-                            <div className="rounded-full flex space-x-2 pb-2">
+                            <div className="rounded-full flex space-x-2 pb-2 items-center">
                                 <RiTailwindCssFill />
                                 <text> Tailwind</text>
 
                             </div>
 
-                            <div className="rounded-full flex space-x-2 pb-2">
+                            <div className="rounded-full flex space-x-2 pb-2 items-center">
                                 <SiExpress />
                                 <text> Express</text>
+
+                            </div>
+
+                            <div className="rounded-full flex space-x-2 pb-2 items-center">
+                                <BiLogoSpringBoot />
+                                <text>Spring Boot</text>
 
                             </div>
                         </li>
@@ -104,7 +110,7 @@ function Skills(){
                 <strong className="self-center text-xl md:text-3xl  text-gray-500  p-2">Databases</strong> 
                 <ul className="self-center space-y-1  list-inside  ">
                     <li>
-                        <div className="rounded-full flex space-x-2 pb-2">
+                        <div className="rounded-full flex space-x-2 pb-2 items-center">
                             <DiMysql/>
                             <text> MySQL</text>
 
@@ -112,7 +118,7 @@ function Skills(){
                         
                     </li>
                     <li>
-                        <div className="rounded-full flex space-x-2 pb-2">
+                        <div className="rounded-full flex space-x-2 pb-2 items-center">
                             <SiMongodb />
                             <text> MongoDB</text>
 
@@ -124,21 +130,21 @@ function Skills(){
                 <strong className="self-center text-gray-500 text-xl md:text-3xl p-2"> Other Tools</strong> 
                 <ul className="self-center space-y-1   list-inside  ">
                     <li>
-                        <div className="rounded-full flex space-x-2 pb-2">
+                        <div className="rounded-full flex space-x-2 pb-2 items-center">
                             <IoLogoGithub/>
                             <text> Git</text>
 
                         </div>
                     </li>
                     <li>
-                         <div className="rounded-full flex space-x-2 pb-2">
+                         <div className="rounded-full flex space-x-2 pb-2 items-center">
                             <SiLatex />
                             <text> LaTeX</text>
 
                         </div>
                     </li>
                     <li>
-                        <div className="rounded-full flex space-x-2 pb-2">
+                        <div className="rounded-full flex space-x-2 pb-2 items-center">
                             <FaDocker />
                             <text> Docker</text>
 
@@ -148,7 +154,7 @@ function Skills(){
 
                     <li>
 
-                        <div className="rounded-full flex space-x-2 pb-2">
+                        <div className="rounded-full flex space-x-2 pb-2 items-center">
                             <FcLinux />
                             <text> Linux</text>
 

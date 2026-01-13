@@ -10,7 +10,7 @@ import bat from '../../assets/castle.jpg';
 
 import float from '../../assets/ballsv2g.gif';
 import gn from '../../assets/graph.png';
-
+import teapot from "../../assets/teapot.png"
 
 
 
@@ -27,6 +27,7 @@ function Projects( props: ProjectProps){
     const BASTIONS : number = 4;
     const BALLS_LAUNCH : number = 5;
     const GANAL: number = 6;
+    const TEAPOT: number = 7;
     const obj: projectObject[] = [
     
    
@@ -82,6 +83,13 @@ function Projects( props: ProjectProps){
       "desc": "A Java application which allows a user to traverse a graph",
     },
     
+    {
+      "img": teapot,
+      "title": "Im a little Teapot short and stout",
+      "desc": "WebGL 3D project, with Phong shading" 
+    },
+
+
 
     ];
 
@@ -128,6 +136,8 @@ function Projects( props: ProjectProps){
                 <ProjectElement  onClick={props.onClick} data={obj[RUSTY_SHELL]} />
                 {/** Rusty Bastion */}
                 <ProjectElement  onClick={props.onClick} data={obj[BASTIONS]} />
+
+                <ProjectElement onClick={props.onClick} data={obj[TEAPOT]}/>
             </div>
 
             <div className="flex space-x-10  justify-center columns-3 mb-5">

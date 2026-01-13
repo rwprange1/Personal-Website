@@ -11,5 +11,84 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script id="vertex-shader" type="x-shader/x-vertex">
+        precision mediump float;
+        
+        attribute vec4 vPosition, vNorm;
+
+        uniform mat4 uCamera,  uPerspectiveMatrix;
+        uniform vec4 uRotQuat, lightPos, viewerPos;
+        varying vec3 N, L,E;
+
+        /**
+            the format for a quat vec4 (scale, vec3)
+            function multiplies two quaternions
+        */
+        vec4 multq(vec4 a, vec4 b){
+            return vec4(a.x * b.x - dot(a.yzw, b.yzw),
+                cross(b.yzw, a.yzw) + a.yzw *  b.x  + b.yzw * a.x    
+            );
+        }
+
+
+        vec4 invq(vec4 a){
+            return (vec4(a.x, -a.yzw)/dot(a,a));
+        }
+
+        vec4 rotate(vec4 vPosition){
+            vec4 p = vec4(0.0, vPosition.xyz);
+            p = multq(uRotQuat, multq(p, invq(uRotQuat)));
+            return vec4(p.yzw, 1.0);
+        }
+
+        void main() {
+            gl_PointSize = 3.0;
+            vec4 newPos = rotate(vPosition); // gets the rotationed position of the vertex
+            vec4 newNorm = rotate(vNorm);
+
+            vec3 posEye = (uCamera * newPos).xyz;
+            vec3 lightEye = (uCamera * lightPos).xyz;
+
+            L = normalize(lightEye - posEye);
+            N = normalize((mat3(uCamera) * newNorm.xyz));
+            E = (viewerPos.xyz - posEye);
+
+            gl_Position =  uPerspectiveMatrix * uCamera  * newPos; 
+            
+        }
+      </script>
+
+      <script id="fragment-shader" type="x-shader/x-fragment">
+
+        precision mediump float;
+
+        uniform vec4 ambientProduct, diffuseProduct, specularProduct, uColor;
+        uniform float shininess;
+
+        varying vec3 N, L, E;
+
+        void main() {
+          vec4 fColor;
+          vec3 H = normalize(L+E);
+          vec4 ambient = ambientProduct;
+          float k_d = max(dot(L,N), 0.0);
+          vec4 diffuse = k_d * diffuseProduct;
+
+          float k_s = pow(max(dot(N,H), 0.0), shininess);
+          vec4 specular = k_s * specularProduct;
+
+          if (dot(L,N) < 0.0 ){
+              specular = vec4(0.0, 0.0, 0.0, 1.0);
+          }
+          fColor = (ambient + diffuse + specular) * uColor;
+          fColor.a = 1.0;
+          
+        
+          gl_FragColor = fColor;
+        }
+
+      </script>
+
+
   </body>
 </html>

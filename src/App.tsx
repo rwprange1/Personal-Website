@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-do
 
 
 
+
 function App() {
 
 
@@ -23,7 +24,7 @@ function App() {
                     <Route path="about" element={<About/>}/>
                     <Route path="research" element={<Research/>}/>
                     <Route path="projects" element={<ProjectContainer/>}>
-                        
+                       
                     </Route>
                     
                     <Route path="contact" element={<Contact/>}/>
