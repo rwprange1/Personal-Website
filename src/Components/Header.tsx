@@ -14,19 +14,16 @@ export default function Header() {
   });
 
   useEffect(() => {
-    console.log("UPDATING VALUE");
-    console.log('HTML classes:', document.documentElement.className);
     // Sync the HTML class with state
     if (darkMode) {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
     }
-  }, [darkMode]); // Only run when darkMode changes
+    }, [darkMode]); // Only run when darkMode changes
 
   const toggle = () => {
-    console.log("Toggle called")
-    setDarkMode(prev => !prev); // Flip the state, effect will handle DOM
+    setDarkMode(prev => !prev); 
   };
 
    

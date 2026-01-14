@@ -54,7 +54,6 @@ export default function SideBar(props: SideBarProps){
                 return Teapot;                    
 
         }
-        console.log(name)
         return Chess
     }
     
