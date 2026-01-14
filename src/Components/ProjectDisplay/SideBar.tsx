@@ -45,9 +45,9 @@ export default function SideBar(props: SideBarProps){
             case names[3]:
                 return Shell;
             case names[4]:
-                return DynamicCol;
-            case names[5]:
                 return Bastions;
+            case names[5]:
+                return DynamicCol;
             case names[6]:
                 return JavaGA;
             case names[7]:
