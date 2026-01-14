@@ -12,7 +12,7 @@ export default function Bastions(){
                 
             </p>
             <h4>
-                Please note the program looks like it is running linearly as the method of logging info is shared between all threads and as such is locking resource causing the threads waiting to log sleep until the logging resource is free.
+                Please note the program looks like it is running linearly as the method of logging info is shared between all threads. Locking this resource causes the threads waiting to log to sleep until the logging resource is free.
             </h4>
 
 
