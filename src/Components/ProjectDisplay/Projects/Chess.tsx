@@ -35,7 +35,7 @@ export default function Chess(){
 
             <p>
                 <button className='flex cursor-grab hover:bg-zinc-800 rounded-2xl p-2' onClick={()=> {
-                    window.location.href = "https://gitfront.io/r/ricwp12/6W3trXvVkj6g/ChessMeister/"
+                    window.location.href = "https://gitfront.io/r/ricwp12/qsDUvfM56CWG/ChessMeisterV2/"
                 }}>
                     <text> View ChessMeister </text>
                     <GoArrowUpRight/>
